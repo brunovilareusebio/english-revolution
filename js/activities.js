@@ -1,3 +1,3 @@
 // Apenas placeholder por ora
-console.log('Grammar loaded');
+console.log('Activities loaded');
 
