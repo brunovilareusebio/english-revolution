@@ -3,73 +3,140 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Curso de Inglês Revolucionário - Progresso & Conteúdo</title>
+  <title>English Revolution - Surf & Boogie 70s</title>
 
+  <!-- Fontes Google -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-  <style>
-    /* Barra de progresso */
-    #progress-container {
-      width: 90%;
-      max-width: 900px;
-      background-color: var(--cor-areia);
-      border-radius: 12px;
-      margin: 20px auto 40px;
-      height: 20px;
-      box-shadow: inset 0 0 5px rgba(0,0,0,0.1);
-    }
-    #progress-bar {
-      height: 100%;
-      width: 0;
-      background: linear-gradient(90deg, var(--cor-laranja-queimado), var(--cor-dourado));
-      border-radius: 12px;
-      transition: width 0.4s ease;
-    }
-    #progress-text {
-      text-align: center;
-      font-weight: 600;
-      color: var(--cor-marrom);
-      margin-bottom: 15px;
-      font-family: 'Poppins', sans-serif;
+  <header class="container">
+    <h1>Curso de Inglês Revolucionário</h1>
+    <nav>
+      <a href="#modulos">Módulos</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main class="container">
+
+    <div id="progress-text">Progresso: 0%</div>
+    <div id="progress-container">
+      <div id="progress-bar"></div>
+    </div>
+
+    <section id="modulos">
+      <h2>Módulos</h2>
+      <p>Marque os módulos que você já concluiu e acesse os conteúdos clicando nos links:</p>
+      <ul class="modulos-lista" id="modulos-lista">
+        <li>
+          <input type="checkbox" id="mod1" />
+          <label for="mod1">01 Say My Name – Vocabulário</label>
+          <a href="https://github.com/brunovilareusebio/english-revolution/blob/main/A1/01_say_my_name/vocab.md" target="_blank">[Ver conteúdo]</a>
+        </li>
+        <li>
+          <input type="checkbox" id="mod2" />
+          <label for="mod2">01 Say My Name – Gramática</label>
+          <a href="https://github.com/brunovilareusebio/english-revolution/blob/main/A1/01_say_my_name/grammar.md" target="_blank">[Ver conteúdo]</a>
+        </li>
+        <li>
+          <input type="checkbox" id="mod3" />
+          <label for="mod3">01 Say My Name – Cultura</label>
+          <a href="https://github.com/brunovilareusebio/english-revolution/blob/main/A1/01_say_my_name/culture.md" target="_blank">[Ver conteúdo]</a>
+        </li>
+        <li>
+          <input type="checkbox" id="mod4" />
+          <label for="mod4">01 Say My Name – Atividades</label>
+          <a href="https://github.com/brunovilareusebio/english-revolution/blob/main/A1/01_say_my_name/activities.md" target="_blank">[Ver conteúdo]</a>
+        </li>
+        <li>
+          <input type="checkbox" id="mod5" />
+          <label for="mod5">01 Say My Name – Projeto</label>
+          <a href="https://github.com/brunovilareusebio/english-revolution/blob/main/A1/01_say_my_name/project.md" target="_blank">[Ver conteúdo]</a>
+        </li>
+        <li>
+          <input type="checkbox" id="mod6" />
+          <label for="mod6">02 Home Family Vibe (em construção)</label>
+          <a href="https://github.com/brunovilareusebio/english-revolution/tree/main/A1/02_home_family_vibe" target="_blank">[Ver pasta]</a>
+        </li>
+        <li>
+          <input type="checkbox" id="mod7" />
+          <label for="mod7">03 Style Streetwear (em construção)</label>
+          <a href="https://github.com/brunovilareusebio/english-revolution/tree/main/A1/03_style_streetwear" target="_blank">[Ver pasta]</a>
+        </li>
+      </ul>
+    </section>
+
+    <section id="sobre">
+      <h2>Sobre o Projeto</h2>
+      <p>Este é um curso gratuito, digital e multicultural de inglês que transforma aprendizado em cultura, educação em entretenimento e estudantes em cidadãos globais fluentes.</p>
+      <p>O curso vai do zero ao C2, com foco em imersão cultural, inclusão real e metodologia inovadora.</p>
+    </section>
+
+    <section id="contato">
+      <h2>Contato</h2>
+      <p>Quer saber mais? Envie um e-mail para <a href="mailto:contato@englishrevolution.com">contato@englishrevolution.com</a> ou siga nossas redes sociais.</p>
+    </section>
+
+  </main>
+
+  <footer>
+    &copy; 2025 Bruno Vilar - Todos os direitos reservados
+  </footer>
+
+  <!-- Player Spotify fixo -->
+  <div id="spotify-player">
+    <iframe
+      src="https://open.spotify.com/embed/playlist/37i9dQZF1DX6VdMW310YC7"
+      width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"
+      title="Playlist Surf & Boogie 70s">
+    </iframe>
+  </div>
+
+  <!-- Script de progresso -->
+  <script>
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+    const progressBar = document.getElementById('progress-bar');
+    const progressText = document.getElementById('progress-text');
+
+    function atualizarProgresso() {
+      const total = checkboxes.length;
+      let completos = 0;
+      checkboxes.forEach(chk => { if (chk.checked) completos++; });
+      const percent = Math.round((completos / total) * 100);
+      progressBar.style.width = percent + '%';
+      progressText.textContent = `Progresso: ${percent}%`;
     }
 
-    /* Lista com checkboxes e links lado a lado */
-   <ul class="modulos-lista">
-  <li>
-    <input type="checkbox" id="mod1" />
-    <label for="mod1">01 Say My Name – Vocabulário</label>
-    <a href="https://github.com/brunovilareusebio/english-revolution/blob/main/A1/01_say_my_name/vocab.md" target="_blank">[Ver conteúdo]</a>
-  </li>
-  <li>
-    <input type="checkbox" id="mod2" />
-    <label for="mod2">01 Say My Name – Gramática</label>
-    <a href="https://github.com/brunovilareusebio/english-revolution/blob/main/A1/01_say_my_name/grammar.md" target="_blank">[Ver conteúdo]</a>
-  </li>
-  <li>
-    <input type="checkbox" id="mod3" />
-    <label for="mod3">01 Say My Name – Cultura</label>
-    <a href="https://github.com/brunovilareusebio/english-revolution/blob/main/A1/01_say_my_name/culture.md" target="_blank">[Ver conteúdo]</a>
-  </li>
-  <li>
-    <input type="checkbox" id="mod4" />
-    <label for="mod4">01 Say My Name – Atividades</label>
-    <a href="https://github.com/brunovilareusebio/english-revolution/blob/main/A1/01_say_my_name/activities.md" target="_blank">[Ver conteúdo]</a>
-  </li>
-  <li>
-    <input type="checkbox" id="mod5" />
-    <label for="mod5">01 Say My Name – Projeto</label>
-    <a href="https://github.com/brunovilareusebio/english-revolution/blob/main/A1/01_say_my_name/project.md" target="_blank">[Ver conteúdo]</a>
-  </li>
-  <li>
-    <input type="checkbox" id="mod6" />
-    <label for="mod6">02 Home Family Vibe (em construção)</label>
-    <a href="https://github.com/brunovilareusebio/english-revolution/tree/main/A1/02_home_family_vibe" target="_blank">[Ver pasta]</a>
-  </li>
-  <li>
-    <input type="checkbox" id="mod7" />
-    <label for="mod7">03 Style Streetwear (em construção)</label>
-    <a href="https://github.com/brunovilareusebio/english-revolution/tree/main/A1/03_style_streetwear" target="_blank">[Ver pasta]</a>
-  </li>
-</ul>
+    function salvarEstado() {
+      const estado = {};
+      checkboxes.forEach(chk => { estado[chk.id] = chk.checked; });
+      localStorage.setItem('progressoModulos', JSON.stringify(estado));
+    }
 
+    function carregarEstado() {
+      const estado = JSON.parse(localStorage.getItem('progressoModulos'));
+      if (estado) {
+        checkboxes.forEach(chk => {
+          chk.checked = estado[chk.id] || false;
+        });
+      }
+      atualizarProgresso();
+    }
+
+    checkboxes.forEach(chk => {
+      chk.addEventListener('change', () => {
+        atualizarProgresso();
+        salvarEstado();
+      });
+    });
+
+    carregarEstado();
+  </script>
+
+</body>
+</html>
