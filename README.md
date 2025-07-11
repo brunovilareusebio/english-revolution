@@ -1,4 +1,4 @@
-# 🌊 English Revolution – Curso de Idiomas Surf & Boogie 70s
+# 🌊 English Revolution – Curso de Idiomas 
 
 Bem-vinde ao **English Revolution**, um curso gratuito, moderno e imersivo de inglês que mistura cultura pop negra, LGBTQIA+, surf, boogie dos anos 70 e esportes radicais com metodologia de ensino de ponta.  
 
