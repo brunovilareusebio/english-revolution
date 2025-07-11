@@ -3,12 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Curso de Inglês Revolucionário - Progresso & Música</title>
+  <title>Curso de Inglês Revolucionário - Progresso & Conteúdo</title>
 
-  <!-- Fontes Google -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
-
-  <!-- Link para o CSS externo -->
   <link rel="stylesheet" href="style.css" />
 
   <style>
@@ -37,7 +34,7 @@
       font-family: 'Poppins', sans-serif;
     }
 
-    /* Lista com checkboxes */
+    /* Lista com checkboxes e links lado a lado */
     ul.modulos-lista {
       list-style: none;
       padding-left: 0;
@@ -45,30 +42,40 @@
       margin: 0 auto 40px;
     }
     ul.modulos-lista li {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 12px;
       padding: 8px 12px;
       border-bottom: 1px solid var(--cor-areia);
       font-family: 'Poppins', sans-serif;
       font-size: 1.05rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
     }
     ul.modulos-lista li:last-child {
       border-bottom: none;
     }
-    ul.modulos-lista label {
-      cursor: pointer;
-      flex-grow: 1;
-      user-select: none;
-    }
     ul.modulos-lista input[type="checkbox"] {
+      flex-shrink: 0;
       width: 20px;
       height: 20px;
-      margin-left: 12px;
       cursor: pointer;
     }
+    ul.modulos-lista label {
+      flex-grow: 1;
+      cursor: pointer;
+      user-select: none;
+    }
+    ul.modulos-lista a.link-conteudo {
+      color: var(--cor-teal);
+      font-weight: 600;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    ul.modulos-lista a.link-conteudo:hover {
+      text-decoration: underline;
+    }
 
-    /* Spotify player fixo no canto inferior direito */
+    /* Player Spotify fixo no canto inferior direito */
     #spotify-player {
       position: fixed;
       bottom: 15px;
@@ -121,15 +128,43 @@
 
     <section id="modulos">
       <h2>Módulos</h2>
-      <p>Marque os módulos que você já concluiu:</p>
+      <p>Marque os módulos que você já concluiu e acesse os conteúdos clicando nos links:</p>
       <ul class="modulos-lista" id="modulos-lista">
-        <li><label for="mod1">01 Say My Name - Vocabulário</label><input type="checkbox" id="mod1" data-modulo="01_say_my_name" /></li>
-        <li><label for="mod2">01 Say My Name - Gramática</label><input type="checkbox" id="mod2" data-modulo="01_say_my_name" /></li>
-        <li><label for="mod3">01 Say My Name - Cultura</label><input type="checkbox" id="mod3" data-modulo="01_say_my_name" /></li>
-        <li><label for="mod4">01 Say My Name - Atividades</label><input type="checkbox" id="mod4" data-modulo="01_say_my_name" /></li>
-        <li><label for="mod5">01 Say My Name - Projeto</label><input type="checkbox" id="mod5" data-modulo="01_say_my_name" /></li>
-        <li><label for="mod6">02 Home Family Vibe (pasta)</label><input type="checkbox" id="mod6" data-modulo="02_home_family_vibe" /></li>
-        <li><label for="mod7">03 Style Streetwear (pasta)</label><input type="checkbox" id="mod7" data-modulo="03_style_streetwear" /></li>
+        <li>
+          <input type="checkbox" id="mod1" data-modulo="01_say_my_name" />
+          <label for="mod1">01 Say My Name - Vocabulário</label>
+          <a href="A1/01_say_my_name/vocab.md" target="_blank" class="link-conteudo">[Ver conteúdo]</a>
+        </li>
+        <li>
+          <input type="checkbox" id="mod2" data-modulo="01_say_my_name" />
+          <label for="mod2">01 Say My Name - Gramática</label>
+          <a href="A1/01_say_my_name/grammar.md" target="_blank" class="link-conteudo">[Ver conteúdo]</a>
+        </li>
+        <li>
+          <input type="checkbox" id="mod3" data-modulo="01_say_my_name" />
+          <label for="mod3">01 Say My Name - Cultura</label>
+          <a href="A1/01_say_my_name/culture.md" target="_blank" class="link-conteudo">[Ver conteúdo]</a>
+        </li>
+        <li>
+          <input type="checkbox" id="mod4" data-modulo="01_say_my_name" />
+          <label for="mod4">01 Say My Name - Atividades</label>
+          <a href="A1/01_say_my_name/activities.md" target="_blank" class="link-conteudo">[Ver conteúdo]</a>
+        </li>
+        <li>
+          <input type="checkbox" id="mod5" data-modulo="01_say_my_name" />
+          <label for="mod5">01 Say My Name - Projeto</label>
+          <a href="A1/01_say_my_name/project.md" target="_blank" class="link-conteudo">[Ver conteúdo]</a>
+        </li>
+        <li>
+          <input type="checkbox" id="mod6" data-modulo="02_home_family_vibe" />
+          <label for="mod6">02 Home Family Vibe (pasta)</label>
+          <a href="A1/02_home_family_vibe/" target="_blank" class="link-conteudo">[Ver conteúdo]</a>
+        </li>
+        <li>
+          <input type="checkbox" id="mod7" data-modulo="03_style_streetwear" />
+          <label for="mod7">03 Style Streetwear (pasta)</label>
+          <a href="A1/03_style_streetwear/" target="_blank" class="link-conteudo">[Ver conteúdo]</a>
+        </li>
       </ul>
     </section>
 
@@ -153,57 +188,4 @@
   <!-- Player Spotify fixo -->
   <div id="spotify-player" aria-label="Player Spotify">
     <iframe
-      src="https://open.spotify.com/embed/playlist/37i9dQZF1DX6VdMW310YC7"
-      width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"
-      title="Playlist Surf & Boogie 70s">
-    </iframe>
-  </div>
-
-  <script>
-    // Salvar estado dos checkboxes e atualizar barra de progresso
-    const modulosLista = document.getElementById('modulos-lista');
-    const checkboxes = modulosLista.querySelectorAll('input[type="checkbox"]');
-    const progressBar = document.getElementById('progress-bar');
-    const progressText = document.getElementById('progress-text');
-
-    function atualizarProgresso() {
-      let total = checkboxes.length;
-      let completos = 0;
-      checkboxes.forEach(chk => {
-        if (chk.checked) completos++;
-      });
-      let percent = Math.round((completos / total) * 100);
-      progressBar.style.width = percent + '%';
-      progressText.textContent = `Progresso: ${percent}%`;
-    }
-
-    function salvarEstado() {
-      let estado = {};
-      checkboxes.forEach(chk => {
-        estado[chk.id] = chk.checked;
-      });
-      localStorage.setItem('progressoModulos', JSON.stringify(estado));
-    }
-
-    function carregarEstado() {
-      let estado = JSON.parse(localStorage.getItem('progressoModulos'));
-      if (estado) {
-        checkboxes.forEach(chk => {
-          chk.checked = estado[chk.id] || false;
-        });
-      }
-      atualizarProgresso();
-    }
-
-    checkboxes.forEach(chk => {
-      chk.addEventListener('change', () => {
-        atualizarProgresso();
-        salvarEstado();
-      });
-    });
-
-    carregarEstado();
-  </script>
-
-</body>
-</html>
+      src="https://ope
