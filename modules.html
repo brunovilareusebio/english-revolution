@@ -1,89 +1,74 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Módulos do Curso - English Revolution</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
-  <script src="progress.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulos - English Revolution</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-  <header class="container header">
-    <h1 class="logo">English Revolution</h1>
-    <nav>
-      <a href="index.html">Início</a>
-      <a href="modules.html">Módulos</a>
-      <a href="modules.html#vocab">Vocabulário</a>
-      <a href="modules.html#grammar">Gramática</a>
-      <a href="modules.html#culture">Cultura</a>
-      <a href="modules.html#activities">Atividades</a>
-      <a href="modules.html#project">Projeto</a>
-      <a href="index.html#contato">Contato</a>
-    </nav>
-  </header>
+    <!-- Header -->
+    <header class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fas fa-graduation-cap me-2"></i>English Revolution
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            <i class="fas fa-arrow-left me-2"></i>Voltar
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="modules.html">Módulos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="progress.html">Progresso</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
 
-  <main class="container main-content">
+    <!-- Módulos -->
+    <section class="modules-section py-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h1 class="display-4 fw-bold mb-4">Módulos do Curso</h1>
+                    <p class="lead text-muted">Descubra nossa jornada estruturada do básico ao avançado</p>
+                </div>
+            </div>
 
-    <h2>Progresso: <span id="progress-percent">0%</span></h2>
-    <progress id="progress-bar" value="0" max="100"></progress>
-
-    <section id="modulos">
-      <h2>Módulos e Conteúdos</h2>
-
-      <!-- Exemplo para A1 -->
-      <h3 id="A1">Nível A1 – Básico</h3>
-      <ul>
-        <li>
-          <strong>Módulo 1: Say My Name</strong>
-          <ul>
-            <li><a href="modulo1_vocab.html">Vocabulário</a> <input type="checkbox" class="check-complete" data-key="mod1_vocab"></li>
-            <li><a href="modulo1_grammar.html">Gramática</a> <input type="checkbox" class="check-complete" data-key="mod1_grammar"></li>
-            <li><a href="modulo1_culture.html">Cultura</a> <input type="checkbox" class="check-complete" data-key="mod1_culture"></li>
-            <li><a href="modulo1_activities.html">Atividades</a> <input type="checkbox" class="check-complete" data-key="mod1_activities"></li>
-            <li><a href="modulo1_project.html">Projeto Final</a> <input type="checkbox" class="check-complete" data-key="mod1_project"></li>
-          </ul>
-        </li>
-
-        <!-- Próximos módulos, indicando 'Em construção' -->
-        <li>
-          <strong>Módulo 2: Em Construção</strong>
-          <ul>
-            <li><span class="disabled-link">Vocabulário</span></li>
-            <li><span class="disabled-link">Gramática</span></li>
-            <li><span class="disabled-link">Cultura</span></li>
-            <li><span class="disabled-link">Atividades</span></li>
-            <li><span class="disabled-link">Projeto Final</span></li>
-          </ul>
-        </li>
-        <li>
-          <strong>Módulo 3: Em Construção</strong>
-          <ul>
-            <li><span class="disabled-link">Vocabulário</span></li>
-            <li><span class="disabled-link">Gramática</span></li>
-            <li><span class="disabled-link">Cultura</span></li>
-            <li><span class="disabled-link">Atividades</span></li>
-            <li><span class="disabled-link">Projeto Final</span></li>
-          </ul>
-        </li>
-      </ul>
-
-      <!-- Outros níveis (A2, B1, B2, C1, C2) podem ser listados abaixo do mesmo jeito -->
-      <h3 id="A2">Nível A2 – Elementar (em construção)</h3>
-      <p>Conteúdos em desenvolvimento.</p>
-      <h3 id="B1">Nível B1 – Intermediário (em construção)</h3>
-      <p>Conteúdos em desenvolvimento.</p>
-      <h3 id="B2">Nível B2 – Intermediário Avançado (em construção)</h3>
-      <p>Conteúdos em desenvolvimento.</p>
-      <h3 id="C1">Nível C1 – Avançado (em construção)</h3>
-      <p>Conteúdos em desenvolvimento.</p>
-      <h3 id="C2">Nível C2 – Fluência (em construção)</h3>
-      <p>Conteúdos em desenvolvimento.</p>
-    </section>
-
-  </main>
-
-  <footer class="container footer">
-    &copy; 2025 Bruno Vilar | Projeto English Revolution
-  </footer>
-</body>
-</html>
+            <!-- Nível A1-A2 -->
+            <div class="level-section mb-5">
+                <div class="level-header bg-success text-white p-4 rounded-top">
+                    <h2 class="mb-0">
+                        <i class="fas fa-seedling me-3"></i>Nível Básico (A1-A2)
+                    </h2>
+                </div>
+                <div class="row g-4 mt-0">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="module-card">
+                            <div class="module-header">
+                                <h4>Módulo 1</h4>
+                                <span class="badge bg-success">A1</span>
+                            </div>
+                            <h5>Primeiros Passos</h5>
+                            <p>Alfabeto, números, cumprimentos básicos</p>
+                            <div class="module-actions">
+                                <a href="module1.html" class="btn btn-primary">Começar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div
