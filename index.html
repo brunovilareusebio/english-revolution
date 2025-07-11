@@ -1,1 +1,172 @@
-<!DOCTYPE html><html><head><title>Curso de Inglês</title></head><body><h1>Bem-vindo ao curso!</h1></body></html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Curso de Idiomas Surf & Boogie 70s</title>
+
+  <!-- Fontes do Google atualizadas -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
+  <style>
+    /* Paleta de cores inspirada no surf e boogie 70s */
+    :root {
+      --cor-fundo: #FDF6F0;          /* off-white leve */
+      --cor-mostarda: #D4A373;       /* mostarda quente */
+      --cor-laranja-queimado: #E07A5F; /* laranja queimado */
+      --cor-marrom: #3D405B;          /* marrom profundo */
+      --cor-verde-oliva: #81B29A;    /* verde oliva suave */
+      --cor-terracota: #F2CC8F;      /* terracota */
+      --cor-teal: #588157;            /* teal suave */
+      --cor-verde-abacate: #A2C3A4;  /* verde abacate claro */
+      --cor-dourado: #FFD166;         /* dourado vibrante */
+      --cor-azul-suave: #83C5BE;     /* azul mar e céu */
+      --cor-verde-mar: #006D77;      /* verde marítimo */
+      --cor-areia: #FFE8D6;          /* tom areia */
+      --cor-texto-principal: #333333; /* cinza escuro para texto */
+    }
+
+    /* Reset básico e corpo */
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--cor-fundo);
+      color: var(--cor-texto-principal);
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    /* Cabeçalhos com fonte serifada e cor marrom */
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 600;
+      margin-bottom: 20px;
+      color: var(--cor-marrom);
+    }
+
+    /* Navegação */
+    nav {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    nav a {
+      color: var(--cor-verde-oliva);
+      text-decoration: none;
+      font-weight: 600;
+      margin: 0 18px;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: var(--cor-teal);
+      text-decoration: underline;
+    }
+
+    /* Container centralizado com sombra leve */
+    .container {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 30px 25px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    }
+
+    /* Botões grandes e arredondados */
+    button, .btn {
+      background-color: var(--cor-laranja-queimado);
+      color: white;
+      border: none;
+      border-radius: 10px;
+      padding: 14px 36px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      font-size: 1rem;
+      margin-top: 15px;
+      display: inline-block;
+    }
+    button:hover, .btn:hover {
+      background-color: var(--cor-dourado);
+    }
+
+    /* Espaçamento entre seções */
+    section {
+      margin-bottom: 60px;
+    }
+
+    /* Pequeno toque surfista: ondas sutis no topo e rodapé */
+    .wave {
+      width: 100%;
+      height: 80px;
+      background: linear-gradient(90deg, var(--cor-azul-suave), var(--cor-verde-mar));
+      border-radius: 0 0 50% 50% / 0 0 100% 100%;
+      margin-bottom: 40px;
+    }
+
+    /* Rodapé minimalista */
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: var(--cor-marrom);
+      margin-bottom: 30px;
+    }
+
+    /* Responsividade simples */
+    @media (max-width: 600px) {
+      .container {
+        margin: 30px 15px;
+        padding: 20px 15px;
+      }
+      nav a {
+        margin: 0 10px;
+        font-size: 1rem;
+      }
+      button, .btn {
+        width: 100%;
+        padding: 14px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wave"></div>
+
+  <header class="container">
+    <h1>Curso de Idiomas Surf & Boogie 70s</h1>
+    <nav>
+      <a href="#cursos">Cursos</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="cursos">
+      <h2>Nossos Cursos</h2>
+      <p>Aprenda inglês, francês e espanhol com uma vibe relaxada e estilosa, inspirada no surf e no boogie dos anos 70.</p>
+      <button>Matricule-se já</button>
+    </section>
+
+    <section id="sobre">
+      <h2>Sobre o Projeto</h2>
+      <p>Nosso curso combina a liberdade e criatividade do surf com a energia quente e acolhedora do boogie 70s, tudo com um design limpo, elegante e confortável para você aprender melhor.</p>
+    </section>
+
+    <section id="contato">
+      <h2>Contato</h2>
+      <p>Quer saber mais? Envie um e-mail para <a href="mailto:contato@surfboogieidiomas.com">contato@surfboogieidiomas.com</a> ou siga nossas redes sociais.</p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Bruno Vilar - Todos os direitos reservados
+  </footer>
+
+</body>
+</html>
