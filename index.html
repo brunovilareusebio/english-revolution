@@ -1,72 +1,46 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Curso de Inglês Revolucionário</title>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Curso English Revolution</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-  <script>
-    // se abrir com hash, remove e recarrega sem hash
-    if (window.location.hash === '#modulos') {
-      history.replaceState(null, '', window.location.pathname);
-    }
-  </script>
 </head>
 <body>
 
-  <header class="container">
-    <h1>Curso de Inglês Revolucionário</h1>
-    <nav>
-      <a href="index.html">Início</a>
-      <a href="vocab.html">Vocabulário</a>
-      <a href="grammar.html">Gramática</a>
-      <a href="culture.html">Cultura</a>
-      <a href="activities.html">Atividades</a>
-      <a href="project.html">Projeto</a>
-    </nav>
-  </header>
+<header class="container header-main">
+  <h1>Curso English Revolution</h1>
+  <nav>
+    <a href="index.html" class="active">Início</a>
+    <a href="modules.html">Módulos</a>
+  </nav>
+</header>
 
-  <main class="container">
-    <div id="progress-text">Progresso: 0%</div>
-    <div id="progress-container"><div id="progress-bar"></div></div>
+<main class="container">
+  <section class="intro">
+    <h2>Bem-vindo ao Curso English Revolution</h2>
+    <p>Um curso gratuito e revolucionário de inglês que une cultura pop, inclusão e aprendizado eficaz do zero à fluência.</p>
 
-    <section id="modulos">
-      <h2>Módulos</h2>
-      <ul class="modulos-lista" id="modulos-lista">
-        <li><input type="checkbox" id="mod1" /><label for="mod1"><a href="vocab.html">Vocabulário</a></label></li>
-        <li><input type="checkbox" id="mod2" /><label for="mod2"><a href="grammar.html">Gramática</a></label></li>
-        <li><input type="checkbox" id="mod3" /><label for="mod3"><a href="culture.html">Cultura</a></label></li>
-        <li><input type="checkbox" id="mod4" /><label for="mod4"><a href="activities.html">Atividades</a></label></li>
-        <li><input type="checkbox" id="mod5" /><label for="mod5"><a href="project.html">Projeto</a></label></li>
-      </ul>
-    </section>
-  </main>
+    <div class="video-wrapper">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Vídeo do Curso" frameborder="0" allowfullscreen></iframe>
+    </div>
 
-  <footer>&copy; 2025 Bruno Vilar</footer>
+    <h3>Descrição do Curso</h3>
+    <p>
+      Este curso tem 18 módulos divididos por níveis de A1 a C2.<br />
+      Cada módulo é dividido em Vocabulário, Gramática, Cultura, Atividades e Projeto.<br />
+      Você terá uma experiência de aprendizado imersiva e inclusiva, com conteúdos que envolvem a cultura negra, LGBTQ+, periférica, entre outras.
+    </p>
 
-  <div id="spotify-player">
-    <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DX6VdMW310YC7" frameborder="0" allow="encrypted-media"></iframe>
-  </div>
+    <h3>Contato</h3>
+    <p>Email: <a href="mailto:brunoveusebio@hotmail.com">brunoveusebio@hotmail.com</a></p>
+    <p>Instagram: <a href="https://instagram.com/brunovilar_" target="_blank">@brunovilar_</a></p>
+  </section>
+</main>
 
-  <script>
-    const checkboxes = document.querySelectorAll('#modulos-lista input');
-    function atualizar() {
-      let total = checkboxes.length, done=0;
-      checkboxes.forEach(c=>c.checked && done++);
-      let pct = Math.round(done/total*100);
-      document.getElementById('progress-bar').style.width = pct+'%';
-      document.getElementById('progress-text').textContent = `Progresso: ${pct}%`;
-    }
-    checkboxes.forEach(c=>{
-      c.addEventListener('change', ()=>{
-        localStorage.setItem(c.id, c.checked);
-        atualizar();
-      });
-      c.checked = localStorage.getItem(c.id)==='true';
-    });
-    atualizar();
-  </script>
+<footer class="container footer-main">
+  <p>© 2025 Bruno Vilar - English Revolution</p>
+</footer>
 
 </body>
 </html>
