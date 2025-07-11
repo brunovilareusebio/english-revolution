@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu Progresso - English Revolution</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fas fa-graduation-cap me-2"></i>English Revolution
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            <i class="fas fa-arrow-left me-2"></i>Voltar
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="modules.html">Módulos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="progress.html">Progresso</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Progresso -->
+    <section class="progress-section py-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h1 class="display-4 fw-bold text-center mb-5">Seu Progresso</h1>
+                    
+                    <!-- Progresso Geral -->
+                    <div class="progress-overview mb-5">
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body p-4">
+                                <h3 class="mb-4">Progresso Geral do Curso</h3>
+                                <div class="progress-bar-container mb-3">
+                                    <div class="progress" style="height: 25px;">
+                                        <div class="progress-bar bg-success" id="overall-progress" style="width: 16.67%"></div>
+                                    </div>
+                                    <div class="progress-text mt-2">
+                                        <strong>3 de 18 módulos completados (16.67%)</strong>
+                                    </div>
+                                </div>
+                                <div class="row text-center">
+                                    <div class="col-4">
+                                        <div class="stat-item">
+                                            <h4 class="text-success">3</h4>
+                                            <small class="text-muted">Completos</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="stat-item">
+                                            <h4 class="text-primary">1</h4>
+                                            <small class="text-muted">Em andamento</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="stat-item">
+                                            <h4 class="text-muted">14</h4>
+                                            <small class="text-muted">Restantes</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Progresso por Nível -->
+                    <div class="level-progress mb-5">
+                        <!-- Nível A1-A2 -->
+                        <div class="level-card mb-4">
+                            <div class="level-header bg-success text-white p-3 rounded-top">
+                                <h4 class="mb-0">Nível Básico (A1-A2)</h4>
+                            </div>
+                            <div class="level-body p-4">
+                                <div class="progress mb-3" style="height: 20px;">
+                                    <div class="progress-bar bg-success" style="width: 50%"></div>
+                                </div>
+                                <p class="mb-3"><strong>3 de 6 módulos completados (50%)</strong></p>
+                                <div class="modules-list">
+                                    <div class="module-item completed">
+                                        <i class="fas fa-check-circle text-success me-2"></i>
+                                        <span>Módulo 1: Primeiros Passos</span>
+                                        <button class="btn btn-sm btn-outline-success ms-auto" onclick="toggleModule(1)">
+                                            <i class="fas fa-undo"></i> Desmarcar
+                                        </button>
+                                    </div>
+                                    <div class="module-item completed">
+                                        <i class="fas fa-check-circle text-success me-2"></i>
+                                        <span>Módulo 2: Apresentações</span>
+                                        <button class="btn btn-sm btn-outline-success ms-auto" onclick="toggleModule(2)">
+                                            <i class="fas fa-undo"></i> Desmarcar
+                                        </button>
+                                    </div>
+                                    <div class="module-item completed">
+                                        <i class="fas fa-check-circle text-success me-2"></i>
+                                        <span>Módulo 3: Rotina Diária</span>
+                                        <button class="btn btn-sm btn-outline-success ms-auto" onclick="toggleModule(3)">
+                                            <i class="fas fa-undo"></i> Desmarcar
+                                        </button>
+                                    </div>
+                                    <div class="module-item">
+                                        <i class="fas fa-circle text-muted me-2"></i>
+                                        <span>Módulo 4: Gostos e Preferências</span>
+                                        <button class="btn btn-sm btn-outline-primary ms-auto" onclick="toggleModule(4)">
+                                            <i class="fas fa-check"></i> Completar
+                                        </button>
+                                    </div>
+                                    <div class="module-item">
+                                        <i class="fas fa-circle text-muted me-2"></i>
+                                        <span>Módulo 5: Passado e Futuro</span>
+                                        <button class="btn btn-sm btn-outline-primary ms-auto" onclick="toggleModule(5)">
+                                            <i class="fas fa-check"></i> Completar
+                                        </button>
+                                    </div>
+                                    <div class="module-item">
+                                        <i class="fas fa-circle text-muted me-2"></i>
+                                        <span>Módulo 6: Experiências</span>
+                                        <button class="btn btn-sm btn-outline-primary ms-auto" onclick="toggleModule(6)">
+                                            <i class="fas fa-check"></i> Completar
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Nível B1-B2 -->
+                        <div class="level-card mb-4">
+                            <div class="level-header bg-warning text-dark p-3 rounded-top">
+                                <h4 class="mb-0">Nível Intermediário (B1-B2)</h4>
+                            </div>
+                            <div class="level-body p-4">
+                                <div class="progress mb-3" style="height: 20px;">
+                                    <div class="progress-bar bg-warning" style="width: 0%"></div>
+                                </div>
+                                <p class="mb-3"><strong>0 de 6 módulos completados (0%)</strong></p>
+                                <div class="modules-list">
+                                    <div class="module-item disabled">
+                                        <i class="fas fa-lock text-muted me-2"></i>
+                                        <span class="text-muted">Módulo 7: Comunicação Social</span>
+                                        <small class="text-muted ms-auto">Bloqueado</small>
+                                    </div>
+                                    <div class="module-item disabled">
+                                        <i class="fas fa-lock text-muted me-2"></i>
+                                        <span class="text-muted">Módulo 8: Mundo do Trabalho</span>
+                                        <small class="text-muted ms-auto">Bloqueado</small>
+                                    </div>
+                                    <div class="module-item disabled">
+                                        <i class="fas fa-lock text-muted me-2"></i>
+                                        <span class="text-muted">Módulo 9: Cultura e Sociedade</span>
+                                        <small class="text-muted ms-auto">Bloqueado</small>
+                                    </div>
+                                    <div class="module-item disabled">
+                                        <i class="fas fa-lock text-muted me-2"></i>
+                                        <span class="text-muted">Módulo 10: Mídia e Tecnologia</span>
+                                        <small class="text-muted ms-auto">Bloqueado</small>
+                                    </div>
+                                    <div class="module-item disabled">
+                                        <i class="fas fa-lock text-muted me-2"></i>
+                                        <span class="text-muted">Módulo 11: Argumentação</span>
+                                        <small class="text-muted ms-auto">Bloqueado</small>
+                                    </div>
+                                    <div class="module-item disabled">
+                                        <i class="fas fa-lock text-muted me-2"></i>
+                                        <span class="text-muted">Módulo 12: Relacionamentos</span>
+                                        <small class="text-muted ms-auto">Bloqueado</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Nível C1-C2 -->
+                        <div class="level-card mb-4">
+                            <div class="level-header bg-danger text-white p-3 rounded-top">
+                                <h4 class="mb-0">Nível Avançado (C1-C2)</h4>
+                            </div>
+                            <div class="level-body p-4">
+                                <div class="progress mb-3" style="height: 20px;">
+                                    <div class="progress-bar bg-danger" style="width: 0%"></div>
+                                </div>
+                                <p class="mb-3"><strong>0 de 6 módulos completados (0%)</strong></p>
+                                <div class="modules-list">
+                                    <div class="module-item disabled">
+                                        <i class="fas fa-lock text-muted me-2"></i>
+                                        <span class="text-muted">Módulo 13: Linguagem Acadêmica</span>
+                                        <small class="text-muted ms-auto">Bloqueado</small>
+                                    </div>
+                                    <div class="module-item disabled">
+                                        <i class="fas fa-lock text-muted me-2"></i>
+                                        <span class="text-muted">Módulo 14: Questões Globais</span>
+                                        <small class="text-muted ms-auto">Bloqueado</small>
+                                    </div>
+                                    <div class="module-item disabled">
+                                        <i class="fas fa-lock text-muted me-2"></i>
+                                        <span class="text-muted">Módulo 15: Arte e Literatura</span>
+                                        <small class="text-muted ms-auto">Bloqueado</small>
+                                    </div>
+                                    <div class="module-item disabled">
+                                        <i class="fas fa-lock text-muted me-2"></i>
+                                        <span class="text-muted">Módulo 16: Nuances Linguísticas</span>
+                                        <small class="text-muted ms-auto">Bloqueado</small>
+                                    </div>
+                                    <div class="module-item disabled">
+                                        <i class="fas fa-lock text-muted me-2"></i>
+                                        <span class="text-muted">Módulo 17: Especialização</span>
+                                        <small class="text-muted ms-auto">Bloqueado</small>
+                                    </div>
+                                    <div class="module-item disabled">
+                                        <i class="fas fa-lock text-muted me-2"></i>
+                                        <span class="text-muted">Módulo 18: Fluência Nativa</span>
+                                        <small class="text-muted ms-auto">Bloqueado</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2025 Bruno Vilar - English Revolution</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="mailto:brunoveusebio@hotmail.com" class="text-muted me-3">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://instagram.com/brunovilar_" class="text-muted" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/progress.js"></script>
+</body>
+</html>
