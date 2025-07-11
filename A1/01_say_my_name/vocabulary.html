@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vocabulário – Módulo 1</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <nav class="navbar fixed-top">
+    <div class="container">
+      <a href="../index.html">← Início</a> |
+      <a href="grammar.html">Gramática →</a>
+    </div>
+  </nav>
+
+  <section class="bg-light">
+    <div class="container">
+      <h1 class="display-5">📚 Vocabulário: Alfabeto, Números & Cumprimentos</h1>
+      <!-- Alfabeto -->
+      <h2>🔤 Alfabeto</h2>
+      <div class="row row-cols-4 g-3 mb-4">
+        <div class="col"><div class="letter-card"><div class="fs-1">A</div><div>/eɪ/</div><small>Aretha</small></div></div>
+        <div class="col"><div class="letter-card"><div class="fs-1">B</div><div>/biː/</div><small>Beyoncé</small></div></div>
+        <div class="col"><div class="letter-card"><div class="fs-1">C</div><div>/siː/</div><small>Chic</small></div></div>
+        <div class="col"><div class="letter-card"><div class="fs-1">D</div><div>/diː/</div><small>Diana</small></div></div>
+      </div>
+
+      <!-- Números -->
+      <h2>🔢 Números 1–5</h2>
+      <ul class="list-group mb-4">
+        <li class="list-group-item">1 – one <span class="badge bg-primary">/wʌn/</span></li>
+        <li class="list-group-item">2 – two <span class="badge bg-primary">/tuː/</span></li>
+        <li class="list-group-item">3 – three <span class="badge bg-primary">/θriː/</span></li>
+        <li class="list-group-item">4 – four <span class="badge bg-primary">/fɔːr/</span></li>
+        <li class="list-group-item">5 – five <span class="badge bg-primary">/faɪv/</span></li>
+      </ul>
+
+      <!-- Cumprimentos -->
+      <h2>👋 Cumprimentos</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <h5>Formais</h5>
+          <ul>
+            <li>Hello</li><li>Good morning</li><li>Good evening</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h5>Informais</h5>
+          <ul>
+            <li>Hi</li><li>Hey</li><li>What’s up?</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Prática -->
+      <h2 class="mt-5">🎯 Prática</h2>
+      <p><strong>Spelling Challenge:</strong> clique em Beyoncé:</p>
+      <button class="btn btn-primary" onclick="spellChallenge('Beyoncé')">Beyoncé</button>
+
+      <p class="mt-3"><strong>Counting Game:</strong></p>
+      <img src="https://via.placeholder.com/40?text=🎵"><img src="https://via.placeholder.com/40?text=🎵"><img src="https://via.placeholder.com/40?text=🎵">
+      <input id="countAnswer" type="number" style="width: 60px;">
+      <button class="btn btn-primary" onclick="checkCount()">Verificar</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 English Revolution</p>
+  </footer>
+  <script src="../js/revolution.js"></script>
+  <script src="../js/vocabulary.js"></script>
+</body>
+</html>
