@@ -1,337 +1,281 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>English Revolution - Curso Revolucionário de Inglês</title>
-  <meta name="description" content="Curso gratuito de inglês que une cultura pop, inclusão e aprendizado eficaz. Do zero à fluência com estética surf e boogie anos 70.">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="css/harvard-style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Revolution - Aprenda Inglês com Cultura Pop</title>
+    <meta name="description" content="Curso gratuito de inglês que combina cultura pop, música e temas sociais relevantes. Aprenda do básico ao avançado com metodologia inovadora.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body>
-
-  <!-- Spotify Player -->
-  <div class="spotify-revolution">
-    <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DX0XUsuxWHRQd" width="100%" height="152" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-  </div>
-
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-revolution">
-    <div class="container">
-      <a class="navbar-brand navbar-brand-revolution" href="index.html">
-        <i class="fas fa-wave-square me-2"></i>English Revolution
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav me-auto">
-          <li class="nav-item">
-            <a class="nav-link nav-link-revolution" href="index.html">
-              <i class="fas fa-home me-2"></i>Início
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                🎵 English Revolution
             </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link nav-link-revolution" href="#about">
-              <i class="fas fa-info-circle me-2"></i>Sobre o Curso
-            </a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link nav-link-revolution dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-              <i class="fas fa-layer-group me-2"></i>Níveis
-            </a>
-            <ul class="dropdown-menu dropdown-menu-revolution">
-              <li><a class="dropdown-item dropdown-item-revolution" href="module1/vocabulary.html">A1 - Breakthrough</a></li>
-              <li><a class="dropdown-item dropdown-item-revolution" href="#">A2 - Waystage</a></li>
-              <li><a class="dropdown-item dropdown-item-revolution" href="#">B1 - Threshold</a></li>
-              <li><a class="dropdown-item dropdown-item-revolution" href="#">B2 - Vantage</a></li>
-              <li><a class="dropdown-item dropdown-item-revolution" href="#">C1 - Proficiency</a></li>
-              <li><a class="dropdown-item dropdown-item-revolution" href="#">C2 - Mastery</a></li>
+            <button class="mobile-menu-toggle">☰</button>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Início</a></li>
+                <li><a href="about.html" class="nav-link">Sobre</a></li>
+                <li><a href="levels.html" class="nav-link">Níveis</a></li>
+                <li><a href="exercises.html" class="nav-link">Exercícios</a></li>
+                <li><a href="culture.html" class="nav-link">Cultura</a></li>
+                <li><a href="project.html" class="nav-link">Projeto</a></li>
+                <li><a href="resources.html" class="nav-link">Recursos</a></li>
+                <li><a href="contact.html" class="nav-link">Contato</a></li>
+                <li><a href="levels.html" class="btn btn-primary">Comece Agora</a></li>
             </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link nav-link-revolution dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-              <i class="fas fa-library me-2"></i>Recursos
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Revolucione seu Inglês com Cultura Pop</h1>
+                <p>Aprenda inglês de forma única através de música, filmes e temas sociais relevantes. Do básico ao avançado, com foco na cultura afro-americana e diversidade.</p>
+                <div class="hero-buttons">
+                    <a href="levels.html" class="btn btn-primary btn-lg">
+                        🚀 Começar Gratuitamente
+                    </a>
+                    <a href="#como-funciona" class="btn btn-secondary btn-lg">
+                        📖 Como Funciona
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Para quem é o curso -->
+    <section class="section">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h2>Para Quem é Este Curso?</h2>
+                <p>O English Revolution é perfeito para diferentes perfis de estudantes</p>
+            </div>
+            <div class="feature-grid">
+                <div class="feature">
+                    <div class="feature-icon">🎓</div>
+                    <h3>Iniciantes Absolutos</h3>
+                    <p>Nunca estudou inglês? Começamos do zero com base sólida e metodologia envolvente.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🎵</div>
+                    <h3>Amantes da Música</h3>
+                    <p>Aprenda através de hits, desde soul clássico até hip-hop contemporâneo.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🌍</div>
+                    <h3>Interessados em Cultura</h3>
+                    <p>Explore a rica cultura afro-americana, soul food e história através do idioma.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">📚</div>
+                    <h3>Estudantes Autodidatas</h3>
+                    <p>Material estruturado para estudo independente, no seu próprio ritmo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Como funciona -->
+    <section id="como-funciona" class="section section-gray">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h2>Como Funciona o English Revolution</h2>
+                <p>Uma metodologia inovadora que combina aprendizado tradicional com cultura pop</p>
+            </div>
+            <div class="grid grid-3">
+                <div class="card">
+                    <div class="card-icon">1️⃣</div>
+                    <h3>Escolha seu Nível</h3>
+                    <p>Comece no A1 (iniciante) ou faça nosso teste de nivelamento para encontrar seu ponto de partida ideal.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">2️⃣</div>
+                    <h3>Estude os Módulos</h3>
+                    <p>Cada módulo combina vocabulário, gramática, cultura e prática através de conteúdos autênticos.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">3️⃣</div>
+                    <h3>Pratique e Evolua</h3>
+                    <p>Exercícios interativos, projetos criativos e acompanhamento do seu progresso.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- O que você vai aprender -->
+    <section class="section">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h2>O que Você Vai Aprender</h2>
+                <p>Conteúdo rico que vai além do inglês tradicional</p>
+            </div>
+            <div class="grid grid-2">
+                <div>
+                    <div class="card">
+                        <div class="card-icon">🗣️</div>
+                        <h3>Comunicação Fluente</h3>
+                        <p>Desenvolva speaking, listening, reading e writing através de contextos reais e envolventes.</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="card">
+                        <div class="card-icon">🎭</div>
+                        <h3>Cultura Afro-Americana</h3>
+                        <p>História, música, tradições e impacto social da comunidade negra americana.</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="card">
+                        <div class="card-icon">🍽️</div>
+                        <h3>Soul Food & Tradições</h3>
+                        <p>Explore a culinária, receitas e tradições através do aprendizado do idioma.</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="card">
+                        <div class="card-icon">🎬</div>
+                        <h3>Mídia Contemporânea</h3>
+                        <p>Análise de filmes, séries, música e memes para compreensão cultural profunda.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roadmap dos módulos -->
+    <section class="section section-gray">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h2>Roadmap dos Níveis</h2>
+                <p>Jornada completa do iniciante ao avançado</p>
+            </div>
+            <div class="grid grid-3">
+                <div class="card module-card">
+                    <span class="level-badge">A1-A2</span>
+                    <h3>Fundamentos</h3>
+                    <p><strong>6 meses</strong></p>
+                    <ul>
+                        <li>Alfabeto e números</li>
+                        <li>Cumprimentos básicos</li>
+                        <li>Introdução ao soul e R&B</li>
+                        <li>Cultura e história básica</li>
+                    </ul>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-progress="25"></div>
+                    </div>
+                    <a href="a1/index.html" class="btn btn-primary">Começar Nível A1</a>
+                </div>
+                <div class="card module-card">
+                    <span class="level-badge">B1-B2</span>
+                    <h3>Intermediário</h3>
+                    <p><strong>8 meses</strong></p>
+                    <ul>
+                        <li>Conversação fluente</li>
+                        <li>História do jazz e blues</li>
+                        <li>Soul food e receitas</li>
+                        <li>Análise de letras musicais</li>
+                    </ul>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-progress="0"></div>
+                    </div>
+                    <a href="#" class="btn btn-secondary">Em Desenvolvimento</a>
+                </div>
+                <div class="card module-card">
+                    <span class="level-badge">C1-C2</span>
+                    <h3>Avançado</h3>
+                    <p><strong>10 meses</strong></p>
+                    <ul>
+                        <li>Fluência completa</li>
+                        <li>Análise crítica cultural</li>
+                        <li>Projetos independentes</li>
+                        <li>Mentoria e ensino</li>
+                    </ul>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-progress="0"></div>
+                    </div>
+                    <a href="#" class="btn btn-secondary">Em Desenvolvimento</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre o criador -->
+    <section class="section">
+        <div class="container">
+            <div class="grid grid-2">
+                <div>
+                    <h2>Sobre Bruno Vilar</h2>
+                    <p>Artista, educador e apaixonado por cultura pop, Bruno Vilar criou o English Revolution para democratizar o ensino de inglês através de uma abordagem cultural única.</p>
+                    <p>Com experiência em educação e profundo conhecimento da cultura afro-americana, Bruno desenvolveu uma metodologia que torna o aprendizado mais envolvente e significativo.</p>
+                    <div class="mt-3">
+                        <a href="about.html" class="btn btn-primary">Conheça Mais</a>
+                        <a href="contact.html" class="btn btn-secondary">Entre em Contato</a>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Bruno Vilar" style="border-radius: var(--border-radius-xl); max-width: 100%; height: auto; box-shadow: var(--shadow-lg);">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="section section-gray">
+        <div class="container text-center">
+            <h2>Pronto para Revolucionar seu Inglês?</h2>
+            <p class="mb-3">Junte-se a milhares de estudantes que já transformaram seu aprendizado</p>
+            <a href="levels.html" class="btn btn-primary btn-lg">
+                🎯 Começar Agora Gratuitamente
             </a>
-            <ul class="dropdown-menu dropdown-menu-revolution">
-              <li><a class="dropdown-item dropdown-item-revolution" href="module1/resources.html">Material PDF</a></li>
-              <li><a class="dropdown-item dropdown-item-revolution" href="#">Vídeos</a></li>
-              <li><a class="dropdown-item dropdown-item-revolution" href="#">Podcasts</a></li>
-              <li><a class="dropdown-item dropdown-item-revolution" href="#">Exercícios</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link nav-link-revolution" href="#teste-nivel">
-              <i class="fas fa-clipboard-check me-2"></i>Teste de Nível
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link nav-link-revolution" href="#contact">
-              <i class="fas fa-envelope me-2"></i>Contato
-            </a>
-          </li>
-        </ul>
-        <a href="module1/vocabulary.html" class="btn btn-start-revolution">
-          <i class="fas fa-rocket me-2"></i>Começar Agora
-        </a>
-      </div>
-    </div>
-  </nav>
+        </div>
+    </section>
 
-  <!-- Hero Section -->
-  <section class="hero-revolution">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-6 hero-content">
-          <h1 class="display-3 fw-bold mb-4">
-            Welcome to the <br>
-            <span style="color: var(--sunset-gold);">English Revolution</span>
-          </h1>
-          <p class="lead mb-4">
-            Um curso revolucionário que une <strong>cultura pop</strong>, <strong>inclusão social</strong> e <strong>metodologia Harvard</strong>. 
-            Aprenda inglês do zero à fluência com a estética surf & boogie dos anos 70.
-          </p>
-          <div class="hero-stats row text-center mb-4">
-            <div class="col-4">
-              <h3 class="fw-bold">18</h3>
-              <small>Módulos Completos</small>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>English Revolution</h4>
+                    <p>Transformando o ensino de inglês através da cultura pop e diversidade.</p>
+                    <div class="mt-2">
+                        <a href="mailto:brunoveusebio@hotmail.com">📧 brunoveusebio@hotmail.com</a>
+                        <a href="https://instagram.com/brunovilar_" target="_blank">📱 @brunovilar_</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Navegação</h4>
+                    <a href="index.html">Início</a>
+                    <a href="levels.html">Níveis</a>
+                    <a href="exercises.html">Exercícios</a>
+                    <a href="culture.html">Cultura</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Recursos</h4>
+                    <a href="resources.html">Material de Apoio</a>
+                    <a href="project.html">Projetos</a>
+                    <a href="contact.html">Contato</a>
+                    <a href="about.html">Sobre</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Suporte</h4>
+                    <a href="#">FAQ</a>
+                    <a href="#">Comunidade</a>
+                    <a href="https://github.com/brunovilareusebio/english-revolution" target="_blank">GitHub</a>
+                    <a href="#">Termos de Uso</a>
+                </div>
             </div>
-            <div class="col-4">
-              <h3 class="fw-bold">A1→C2</h3>
-              <small>Níveis CEFR</small>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Bruno Vilar - English Revolution. Todos os direitos reservados.</p>
             </div>
-            <div class="col-4">
-              <h3 class="fw-bold">100%</h3>
-              <small>Gratuito</small>
-            </div>
-          </div>
-          <div class="hero-buttons">
-            <a href="module1/vocabulary.html" class="btn btn-revolution me-3">
-              <i class="fas fa-play me-2"></i>Iniciar Jornada
-            </a>
-            <a href="#about" class="btn btn-outline-revolution">
-              <i class="fas fa-info-circle me-2"></i>Saiba Mais
-            </a>
-          </div>
         </div>
-        <div class="col-lg-6">
-          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-               alt="Diversidade e aprendizado" class="img-fluid rounded-3 shadow-lg glow-animation">
-        </div>
-      </div>
-    </div>
-  </section>
+    </footer>
 
-  <!-- Sobre o Curso -->
-  <section id="about" class="py-5">
-    <div class="container">
-      <div class="revolution-card">
-        <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <h2 class="display-5 fw-bold mb-4">
-              🌊 Por que English Revolution?
-            </h2>
-            <p class="lead mb-5">
-              Nosso curso não é apenas sobre gramática e vocabulário. É uma experiência cultural completa que celebra 
-              a diversidade, a música e a identidade através do aprendizado do inglês.
-            </p>
-          </div>
-        </div>
-        <div class="row g-4">
-          <div class="col-md-6 col-lg-3">
-            <div class="text-center">
-              <div class="feature-icon mb-3" style="color: var(--surf-orange); font-size: 3rem;">
-                <i class="fas fa-heart"></i>
-              </div>
-              <h5>Inclusivo</h5>
-              <p>Representatividade LGBTQ+, cultura negra, indígena e periférica em cada lição.</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <div class="text-center">
-              <div class="feature-icon mb-3" style="color: var(--ocean-blue); font-size: 3rem;">
-                <i class="fas fa-music"></i>
-              </div>
-              <h5>Musical</h5>
-              <p>Aprenda com Beyoncé, Bad Bunny, hip-hop e a trilha sonora dos anos 70.</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <div class="text-center">
-              <div class="feature-icon mb-3" style="color: var(--retro-purple); font-size: 3rem;">
-                <i class="fas fa-graduation-cap"></i>
-              </div>
-              <h5>Acadêmico</h5>
-              <p>Metodologia baseada nas melhores práticas de Harvard, MIT e Cambridge.</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <div class="text-center">
-              <div class="feature-icon mb-3" style="color: var(--sunset-gold); font-size: 3rem;">
-                <i class="fas fa-gift"></i>
-              </div>
-              <h5>Gratuito</h5>
-              <p>Educação de qualidade deve ser acessível a todos, sempre.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Metodologia -->
-  <section class="py-5 bg-light">
-    <div class="container">
-      <div class="revolution-card">
-        <h2 class="display-6 fw-bold text-center mb-5">
-          🎯 Nossa Metodologia Revolucionária
-        </h2>
-        <div class="row g-4">
-          <div class="col-lg-4">
-            <h4>🧠 Aprendizado Imersivo</h4>
-            <p>Cada módulo combina vocabulário, gramática, cultura e prática através de conteúdos autênticos como música, filmes e debates sociais.</p>
-          </div>
-          <div class="col-lg-4">
-            <h4>🎨 Estética Única</h4>
-            <p>Design inspirado na cultura surf e boogie dos anos 70, criando uma experiência visual única e memorável.</p>
-          </div>
-          <div class="col-lg-4">
-            <h4>🤝 Comunidade Ativa</h4>
-            <p>Fóruns, debates e projetos colaborativos que conectam estudantes do mundo todo.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Teste de Nível -->
-  <section id="teste-nivel" class="py-5">
-    <div class="container">
-      <div class="revolution-card text-center">
-        <h2 class="display-6 fw-bold mb-4">📊 Descubra Seu Nível</h2>
-        <p class="lead mb-4">
-          Não sabe por onde começar? Faça nosso teste rápido e descubra qual módulo é ideal para você.
-        </p>
-        <a href="#" class="btn btn-revolution btn-lg">
-          <i class="fas fa-play me-2"></i>Fazer Teste de Nível
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contato -->
-  <section id="contact" class="py-5 bg-light">
-    <div class="container">
-      <div class="revolution-card">
-        <div class="row">
-          <div class="col-lg-6">
-            <h2 class="display-6 fw-bold mb-4">💬 Entre em Contato</h2>
-            <p class="lead mb-4">
-              Tem dúvidas? Sugestões? Quer colaborar? Estamos aqui para ajudar!
-            </p>
-            <div class="contact-info">
-              <div class="mb-3">
-                <i class="fas fa-envelope me-3" style="color: var(--surf-orange);"></i>
-                <strong>Email:</strong> brunoveusebio@hotmail.com
-              </div>
-              <div class="mb-3">
-                <i class="fab fa-instagram me-3" style="color: var(--retro-purple);"></i>
-                <strong>Instagram:</strong> @brunovilar_
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <form class="contact-form">
-              <div class="mb-3">
-                <input type="text" class="form-control" placeholder="Seu nome" required>
-              </div>
-              <div class="mb-3">
-                <input type="email" class="form-control" placeholder="Seu email" required>
-              </div>
-              <div class="mb-3">
-                <textarea class="form-control" rows="4" placeholder="Sua mensagem" required></textarea>
-              </div>
-              <button type="submit" class="btn btn-revolution w-100">
-                <i class="fas fa-paper-plane me-2"></i>Enviar Mensagem
-              </button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer-revolution">
-    <div class="container">
-      <div class="row g-4">
-        <div class="col-lg-4">
-          <div class="footer-section">
-            <h5>English Revolution</h5>
-            <p>Transformando vidas através do ensino revolucionário de inglês com música, cultura e inclusão.</p>
-            <div class="social-icons">
-              <a href="mailto:brunoveusebio@hotmail.com">
-                <i class="fas fa-envelope"></i>
-              </a>
-              <a href="https://instagram.com/brunovilar_" target="_blank">
-                <i class="fab fa-instagram"></i>
-              </a>
-              <a href="#" target="_blank">
-                <i class="fab fa-youtube"></i>
-              </a>
-              <a href="#" target="_blank">
-                <i class="fab fa-spotify"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-2">
-          <div class="footer-section">
-            <h5>Links Rápidos</h5>
-            <a href="index.html">Início</a><br>
-            <a href="#about">Sobre</a><br>
-            <a href="module1/vocabulary.html">Módulos</a><br>
-            <a href="#contact">Contato</a>
-          </div>
-        </div>
-        <div class="col-lg-2">
-          <div class="footer-section">
-            <h5>Níveis</h5>
-            <a href="module1/vocabulary.html">A1 - Básico</a><br>
-            <a href="#">A2 - Elementar</a><br>
-            <a href="#">B1 - Intermediário</a><br>
-            <a href="#">B2 - Intermediário+</a>
-          </div>
-        </div>
-        <div class="col-lg-2">
-          <div class="footer-section">
-            <h5>Recursos</h5>
-            <a href="module1/resources.html">Material PDF</a><br>
-            <a href="#">Vídeos</a><br>
-            <a href="#">Podcasts</a><br>
-            <a href="#">Exercícios</a>
-          </div>
-        </div>
-        <div class="col-lg-2">
-          <div class="footer-section">
-            <h5>Legal</h5>
-            <a href="#">Privacidade</a><br>
-            <a href="#">Termos de Uso</a><br>
-            <a href="#">Cookies</a><br>
-            <a href="#">Suporte</a>
-          </div>
-        </div>
-      </div>
-      <hr class="my-4" style="border-color: var(--deep-teal);">
-      <div class="text-center">
-        <p>&copy; 2025 Bruno Vilar - English Revolution. Todos os direitos reservados.</p>
-        <p class="small">Feito com 🏄‍♀️ e ❤️ no Brasil</p>
-      </div>
-    </div>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="js/revolution.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
