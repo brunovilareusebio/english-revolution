@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vocabulário - Módulo 1: Say My Name | English Revolution</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="../css/harvard-style.css">
+</head>
+<body>
+
+  <!-- Spotify Player -->
+  <div class="spotify-revolution">
+    <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DX0XUsuxWHRQd" width="100%" height="152" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-revolution">
+    <div class="container">
+      <a class="navbar-brand navbar-brand-revolution" href="../index.html">
+        <i class="fas fa-wave-square me-2"></i>English Revolution
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link nav-link-revolution" href="../index.html">
+              <i class="fas fa-home me-2"></i>Início
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-revolution active" href="vocabulary.html">
+              <i class="fas fa-book me-2"></i>Vocabulário
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-revolution" href="grammar.html">
+              <i class="fas fa-cogs me-2"></i>Gramática
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-revolution" href="culture.html">
+              <i class="fas fa-globe me-2"></i>Cultura
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-revolution" href="activities.html">
+              <i class="fas fa-gamepad me-2"></i>Atividades
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-revolution" href="project.html">
+              <i class="fas fa-star me-2"></i>Projeto
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-revolution">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-8">
+          <div class="hero-content">
+            <h1 class="display-4 fw-bold mb-4">
+              📚 Vocabulário: Say My Name
+            </h1>
+            <p class="lead mb-4">
+              Aprenda o alfabeto, números e cumprimentos com exemplos da cultura pop e música dos anos 70.
+              Uma homenagem à icônica música "Say My Name" do Destiny's Child.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
+               alt="Destiny's Child tribute" class="img-fluid rounded-3 shadow-lg">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="container py-5">
+    
+    <!-- Alfabeto em Tabela -->
+    <section class="mb-5">
+      <div class="revolution-card">
+        <h2 class="h3 mb-4 text-center">🔤 English Alphabet</h2>
+        <div class="table-responsive">
+          <table class="revolution-table">
+            <thead>
+              <tr>
+                <th>Letra</th>
+                <th>Pronúncia (IPA)</th>
+                <th>Exemplo Musical</th>
+                <th>Áudio</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr onclick="playLetter('A')">
+                <td class="letter">A</td>
+                <td class="phonetic">/eɪ/</td>
+                <td class="example">Aretha Franklin</td>
+                <td><i class="fas fa-volume-up" style="color: var(--surf-orange); cursor: pointer;"></i></td>
+              </tr>
+              <tr onclick="playLetter('B')">
+                <td class="letter">B</td>
+                <td class="phonetic">/biː/</td>
+                <td class="example">Beyoncé</td>
+                <td><i class="fas fa-volume-up" style="color: var(--surf-orange); cursor: pointer;"></i></td>
+              </tr>
+              <tr onclick="playLetter('C')">
+                <td class="letter">C</td>
+                <td class="phonetic">/siː/</td>
+                <td class="example">Chic</td>
+                <td><i class="fas fa-volume-up" style="color: var(--surf-orange); cursor: pointer;"></i></td>
+              </tr>
+              <tr onclick="playLetter('D')">
+                <td class="letter">D</td>
+                <td class="phonetic">/diː/</td>
+                <td class="example">Diana Ross</td>
+                <td><i class="fas fa-volume-up" style="color: var(--surf-orange); cursor: pointer;"></i></td>
+              </tr>
+              <tr onclick="playLetter('E')">
+                <td class="letter">E</td>
+                <td class="phonetic">/iː/</td>
+                <td class="example">Earth Wind & Fire</td>
+                <td><i class="fas fa-volume-up" style="color: var(--surf-orange); cursor: pointer;"></i></td>
+              </tr>
+              <tr onclick="playLetter('F')">
+                <td class="letter">F</td>
+                <td class="phonetic">/ɛf/</td>
+                <td class="example">Freddie Mercury</td>
+                <td><i class="fas fa-volume-up" style="color: var(--surf-orange); cursor: pointer;"></i></td>
+              </tr>
+              <tr onclick="playLetter('G')">
+                <td class="letter">G</td>
+                <td class="phonetic">/dʒiː/</td>
+                <td class="example">Gloria Gaynor</td>
+                <td><i class="fas fa-volume-up" style="color: var(--surf-orange); cursor: pointer;"></i></td>
+              </tr>
+              <tr onclick="playLetter('H')">
+                <td class="letter">H</td>
+                <td class="phonetic">/eɪtʃ/</td>
+                <td class="example">Hip-Hop</td>
+                <td><i class="fas fa-volume-up" style="color: var(--surf-orange); cursor: pointer;"></i></td>
+              </tr>
+              <!-- Continue com todas as letras até Z -->
+              <tr onclick="playLetter('I')">
+                <td class="letter">I</td>
+                <td class="phonetic">/aɪ/</td>
+                <td class="example">Isaac Hayes</td>
+                <td><i class="fas fa-volume-up" style="color: var(--surf-orange); cursor: pointer;"></i></td>
+              </tr>
+              <tr onclick="playLetter('J')">
+                <td class="letter">J</td>
+                <td class="phonetic">/dʒeɪ/</td>
+                <td class="example">James Brown</td>
+                <td><i class="fas fa-volume-up" style="color: var(--surf-orange); cursor: pointer;"></i></td>
+              </tr>
+              <tr onclick="playLetter('K')">
+                <td class="letter">K</td>
+                <td class="phonetic">/keɪ/</td>
+                <td class="example">Kelly Rowland</td>
+                <td><i class="fas fa-volume-up" style="color: var(--surf-orange); cursor: pointer;"></i></td>
+              </tr>
+              <tr onclick="playLetter('L')">
+                <td class="letter">L</td>
+                <td class="phonetic">/ɛl/</td>
+                <td class="example">Lauryn Hill</td>
+                <td><i class="fas fa-volume-up" style="color: var(--surf-orange); cursor: pointer;"></i></td>
+              </tr>
+              <tr onclick="playLetter('M')">
+                <td class="letter">M</td>
+                <td class="phonetic">/ɛm/</td>
+                <td class="example">Michelle Williams</td>
+                <td><i class="fas fa-volume-up" style="color: var(--surf-orange); cursor: pointer;"></i></td>
+              </tr>
+              <tr onclick="playLetter('N')">
+                <td class="letter">N</td>
+                <td class="phonetic">/ɛn/</td>
+                <td class="example">Nile Rodgers</td>
+                <td><i class="fas fa-volume-up" style="color: var(--surf-orange); cursor: pointer;"></i></td>
+              </tr>
+              <tr onclick="playLetter('O')">
+                <td class="letter">O</td>
+                <td class="phonetic">/oʊ/</td>
+                <td class="example">Otis Redding</td>
+                <td><i class="fas fa-volume-up" style="color: var(--surf-orange); cursor: pointer;"></i></td>
+              </tr>
+              <tr onclick="playLetter('P')">
+                <td class="letter">P</td>
+                <td class="phonetic">/piː/</td>
+                <td class="example">Prince</td>
+                <td><i class="fas fa-volume-up" style="color: var(--surf-orange); cursor: pointer;"></i></td>
+              </tr>
+              <tr onclick="playLetter('Q')">
+                <td class="letter">Q</td>
+                <td class="phonetic">/kjuː/</td>
+                <td class="example">Queen</td>
+                <td><i class="fas fa-volume-up" style="color: var(--surf-orange); cursor: pointer;"></i></td>
+              </tr>
+              <tr onclick="playLetter('R')">
+                <td class="letter">R</td>
+                <td class="phonetic">/ɑːr/</td>
+                <td class="example">Ray Charles</td>
+                <td><i class="fas fa-volume-up" style="color: var(--surf-orange); cursor: pointer;"></i></td>
+              </tr>
+              <tr onclick="playLetter('S')">
+                <td class="letter">S</td>
+                <td class="phonetic">/ɛs/</td>
+                <td class="example">Stevie Wonder</td>
+                <td><i class="fas fa-volume-up" style="color: var(--surf-orange); cursor: pointer;"></i></td>
+              </tr>
+              <tr onclick="playLetter('T')">
+                <td class="letter">T</td>
+                <td class="phonetic">/tiː/</td>
+                <td class="example">Tina Turner</td>
+                <td><i class="fas fa-volume-up" style="color: var(--surf-orange); cursor: pointer;"></i></td>
+              </tr>
+              <tr onclick="playLetter('U')">
+                <td class="letter">U</td>
+                <td class="phonetic">/juː/</td>
+                <td class="example">Usher</td>
+                <td><i class="fas fa-volume-up" style="color: var(--surf-orange); cursor: pointer;"></i></td>
+              </tr>
+              <tr onclick="playLetter('V')">
+                <td class="letter">V</td>
+                <td class="phonetic">/viː/</td>
+                <td class="example">Vinyl Records</td>
+                <td><i class="fas fa-volume-up" style="color: var(--surf-orange); cursor: pointer;"></i></td>
+              </tr>
+              <tr onclick="playLetter('W')">
+                <td class="letter">W</td>
+                <td class="phonetic">/ˈdʌbəljuː/</td>
+                <td class="example">Whitney Houston</td>
+                <td><i class="fas fa-volume-up" style="color: var(--surf-orange); cursor: pointer;"></i></td>
+              </tr>
+              <tr onclick="playLetter('X')">
+                <td class="letter">X</td>
+                <td class="phonetic">/ɛks/</td>
+                <td class="example">X-tra Special</td>
+                <td><i class="fas fa-volume-up" style="color: var(--surf-orange); cursor: pointer;"></i></td>
+              </tr>
+              <tr onclick="playLetter('Y')">
+                <td class="letter">Y</td>
+                <td class="phonetic">/waɪ/</td>
+                <td class="example">Yoncé (Beyoncé)</td>
+                <td><i class="fas fa-volume-up" style="color: var(--surf-orange); cursor: pointer;"></i></td>
+              </tr>
+              <tr onclick="playLetter('Z')">
+                <td class="letter">Z</td>
+                <td class="phonetic">/ziː/</td>
+                <td class="example">Zapp & Roger</td>
+                <td><i class="fas fa-volume-up" style="color: var(--surf-orange); cursor: pointer;"></i></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="alert alert-info mt-4">
+          <i class="fas fa-lightbulb me-2"></i>
+          <strong>Tip:</strong> Click on any row to hear the letter pronunciation in English!
+        </div>
+      </div>
+    </section>
+
+    <!-- Números em Tabela -->
+    <section class="mb-5">
+      <div class="revolution-card">
+        <h2 class="h3 mb-4 text-center">🔢 Numbers 1-100</h2>
+        
+        <!-- Números 1-20 -->
+        <h4 class="mb-3">Basic Numbers (1-20)</h4>
+        <div class="table-responsive mb-4">
+          <table class="revolution-table">
+            <thead>
+              <tr>
+                <th>Número</th>
+                <th>Word</th>
+                <th>Pronúncia (IPA)</th>
+                <th>Áudio</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr onclick="playNumber('one')">
+                <td class="letter">1</td>
+                <td class="example">one</td>
+                <td class="phonetic">/wʌn/</td>
+                <td><i class="fas fa-volume-up" style="color: var(--ocean-blue); cursor: pointer;"></i></td>
+              </tr>
+              <tr onclick="playNumber('two')">
+                <td class="letter">2</td>
+                <td class="example">two</td>
+                <td class="phonetic">/tuː/</td>
+                <td><i class="fas fa-volume-up" style="color: var(--ocean-blue); cursor: pointer;"></i></td>
+              </tr>
+              <tr onclick="playNumber('three')">
+                <td class="letter">3</td>
+                <td class="example">three</td>
+                <td class="phonetic">/θriː/</td>
+                <td><i class="fas fa-volume-up" style="color: var(--ocean-blue); cursor: pointer;"></i></td>
+              </tr>
+              <tr onclick="playNumber('four')">
+                <td class="letter">4</td>
+                <td class="example">four</td>
+                <td class="phonetic">/fɔːr/</td>
+                <td><i class="fas fa-volume-up" style="color: var(--ocean-blue); cursor: pointer;"></i></td>
+              </tr>
+              <tr onclick="playNumber('five')">
+                <td class="letter">5</td>
+                <td class="example">five</td>
+                <td class="phonetic">/faɪv/</td>
+                <td><i class="fas fa-volume-up" style="color: var(--ocean-blue); cursor: pointer;"></i></td>
+              </tr>
+              <tr onclick="playNumber('six')">
+                <td class="letter">6</td>
+                <td class="example">six</td>
+                <td class="phonetic">/sɪks/</td>
+                <td><i class="fas fa-volume-up" style="color: var(--ocean-blue); cursor: pointer;"></i></td>
+              </tr>
+              <tr onclick="playNumber('seven')">
+                <td class="letter">7</td>
+                <td class="example">seven</td>
+                <td class="phonetic">/ˈsɛvən/</td>
+                <td><i class="fas fa-volume-up" style="color: var(--ocean-blue); cursor: pointer;"></i></td>
+              </tr>
+              <tr onclick="playNumber('eight')">
+                <td class="letter">8</td>
+                <td class="example">eight</td>
+                <td class="phonetic">/eɪt/</td>
+                <td><i class="fas fa-volume-up" style="color: var(--ocean-blue); cursor: pointer;"></i></td>
+              </tr>
+              <tr onclick="playNumber('nine')">
+                <td class="letter">9</td>
+                <td class="example">nine</td>
+                <td class="phonetic">/naɪn/</td>
+                <td><i class="fas fa-volume-up" style="color: var(--ocean-blue); cursor: pointer;"></i></td>
+              </tr>
+              <tr onclick="playNumber('ten')">
+                <td class="letter">10</td>
+                <td class="example">ten</td>
+                <td class="phonetic">/tɛn/</td>
+                <td><i class="fas fa-volume-up" style="color: var(--ocean-blue); cursor: pointer;"></i></td>
+              </tr>
+              <tr onclick="playNumber('eleven')">
+                <td class="letter">11</td>
+                <td class="example">eleven</td>
+                <td class="phonetic">/ɪˈlɛvən/</td>
+                <td><i class="fas fa-volume-up" style="color: var(--ocean-blue); cursor: pointer;"></i></td>
+              </tr>
+              <tr onclick="playNumber('twelve')">
+                <td class="letter">12</td>
+                <td class="example">twelve</td>
+                <td class="phonetic">/twɛlv/</td>
+                <td><i class="fas fa-volume-up" style="color: var(--ocean-blue); cursor: pointer;"></i></td>
+              </tr>
+              <tr onclick="playNumber('thirteen')">
+                <td class="letter">13</td>
+                <td class="example">thirteen</td>
+                <td class="phonetic">/ˌθɜrˈtin/</td>
+                <td><i class="fas fa-volume-up" style="color: var(--ocean-blue); cursor: pointer;"></i></td>
+              </tr>
+              <tr onclick="playNumber('fourteen')">
+                <td class="letter">14</td>
+                <td class="example">fourteen</td>
+                <td class="phonetic">/ˌfɔrˈtin/</td>
+                <td><i class="fas fa-volume-up" style="color: var(--ocean-blue); cursor: pointer;"></i></td>
+              </tr>
+              <tr onclick="playNumber('fifteen')">
+                <td class="letter">15</td>
+                <td class="example">fifteen</td>
+                <td class="phonetic">/ˌfɪfˈtin/</td>
+                <td><i class="fas fa-volume-up" style="color: var(--ocean-blue); cursor: pointer;"></i></td>
+              </tr>
+              <tr onclick="playNumber('sixteen')">
+                <td class="letter">16</td>
+                <td class="example">sixteen</td>
+                <td class="phonetic">/ˌsɪksˈtin/</td>
+                <td><i class="fas fa-volume-up" style="color: var(--ocean-blue); cursor: pointer;"></i></td>
+              </tr>
+              <tr onclick="playNumber('seventeen')">
+                <td class="letter">17</td>
+                <td class="example">seventeen</td>
+                <td class="phonetic">/ˌsɛvənˈtin/</td>
+                <td><i class="fas fa-volume-up" style="color: var(--ocean-blue); cursor: pointer;"></i></td>
+              </tr>
+              <tr onclick="playNumber('eighteen')">
+                <td class="letter">18</td>
+                <td class="example">eighteen</td>
+                <td class="phonetic">/ˌeɪˈtin/</td>
+                <td><i class="fas fa-volume-up" style="color: var(--ocean-blue); cursor: pointer;"></i></td>
+              </tr>
+              <tr onclick="playNumber('nineteen')">
+                <td class="letter">19</td>
+                <td class="example">nineteen</td>
+                <td class="phonetic">/ˌnaɪnˈtin/</td>
+                <td><i class="fas fa-volume-up" style="color: var(--ocean-blue); cursor: pointer;"></i></td>
+              </tr>
+              <tr onclick="playNumber('twenty')">
+                <td class="letter">20</td>
+                <td class="example">twenty</td>
+                <td class="phonetic">/ˈtwɛnti/</td>
+                <td><i class="fas fa-volume-up" style="color: var(--ocean-blue); cursor: pointer;"></i></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Dezenas -->
+        <h4 class="mb-3">Tens (20-100)</h4>
+        <div class="table-responsive">
+          <table class="revolution-table">
+            <thead>
+              <tr>
+                <th>Número</th>
+                <th>Word</th>
+                <th>Pronúncia (IPA)</th>
+                <th>Áudio</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr onclick="playNumber('thirty')">
+                <td class="letter">30</td>
+                <td class="example">thirty</td>
+                <td class="phonetic">/ˈθɜrti/</td>
+                <td><i class="fas fa-volume-up" style="color: var(--retro-purple); cursor: pointer;"></i></td>
+              </tr>
+              <tr onclick="playNumber('forty')">
+                <td class="letter">40</td>
+                <td class="example">forty</td>
+                <td class="phonetic">/ˈfɔrti/</td>
+                <td><i class="fas fa-volume-up" style="color: var(--retro-purple); cursor: pointer;"></i></td>
+              </tr>
+              <tr onclick="playNumber('fifty')">
+                <td class="letter">50</td>
+                <td class="example">fifty</td>
+                <td class="phonetic">/ˈfɪfti/</td>
+                <td><i class="fas fa-volume-up" style="color: var(--retro-purple); cursor: pointer;"></i></td>
+              </tr>
+              <tr onclick="playNumber('sixty')">
+                <td class="letter">60</td>
+                <td class="example">sixty</td>
+                <td class="phonetic">/ˈsɪksti/</td>
+                <td><i class="fas fa-volume-up" style="color: var(--retro-purple); cursor: pointer;"></i></td>
+              </tr>
+              <tr onclick="playNumber('seventy')">
+                <td class="letter">70</td>
+                <td class="example">seventy</td>
+                <td class="phonetic">/ˈsɛvənti/</td>
+                <td><i class="fas fa-volume-up" style="color: var(--retro-purple); cursor: pointer;"></i></td>
+              </tr>
+              <tr onclick="playNumber('eighty')">
+                <td class="letter">80</td>
+                <td class="example">eighty</td>
+                <td class="phonetic">/ˈeɪti/</td>
+                <td><i class="fas fa-volume-up" style="color: var(--retro-purple); cursor: pointer;"></i></td>
+              </tr>
+              <tr onclick="playNumber('ninety')">
+                <td class="letter">90</td>
+                <td class="example">ninety</td>
+                <td class="phonetic">/ˈnaɪnti/</td>
+                <td><i class="fas fa-volume-up" style="color: var(--retro-purple); cursor: pointer;"></i></td>
+              </tr>
+              <tr onclick="playNumber('one hundred')">
+                <td class="letter">100</td>
+                <td class="example">one hundred</td>
+                <td class="phonetic">/wʌn ˈhʌndrəd/</td>
+                <td><i class="fas fa-volume-up" style="color: var(--retro-purple); cursor: pointer;"></i></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cumprimentos -->
+    <section class="mb-5">
+      <div class="revolution-card">
+        <h2 class="h3 mb-4 text-center">👋 Greetings & Introductions</h2>
+        <div class="table-responsive">
+          <table class="revolution-table">
+            <thead>
+              <tr>
+                <th>Greeting</th>
+                <th>Pronunciation</th>
+                <th>Usage</th>
+                <th>Audio</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr onclick="playGreeting('Hello')">
+                <td class="example">Hello</td>
+                <td class="phonetic">/həˈloʊ/</td>
+                <td>Universal greeting</td>
+                <td><i class="fas fa-volume-up" style="color: var(--sunset-gold); cursor: pointer;"></i></td>
+              </tr>
+              <tr onclick="playGreeting('Hi')">
+                <td class="example">Hi</td>
+                <td class="phonetic">/haɪ/</td>
+                <td>Casual greeting</td>
+                <td><i class="fas fa-volume-up" style="color: var(--sunset-gold); cursor: pointer;"></i></td>
+              </tr>
+              <tr onclick="playGreeting('Good morning')">
+                <td class="example">Good morning</td>
+                <td class="phonetic">/ɡʊd ˈmɔːrnɪŋ/</td>
+                <td>Before noon</td>
+                <td><i class="fas fa-volume-up" style="color: var(--sunset-gold); cursor: pointer;"></i></td>
+              </tr>
+              <tr onclick="playGreeting('Good afternoon')">
+                <td class="example">Good afternoon</td>
+                <td class="phonetic">/ɡʊd ˌæftərˈnuːn/</td>
+                <td>After noon</td>
+                <td><i class="fas fa-volume-up" style="color: var(--sunset-gold); cursor: pointer;"></i></td>
+              </tr>
+              <tr onclick="playGreeting('Good evening')">
+                <td class="example">Good evening</td>
+                <td class="phonetic">/ɡʊd ˈiːvnɪŋ/</td>
+                <td>After 6 PM</td>
+                <td><i class="fas fa-volume-up" style="color: var(--sunset-gold); cursor: pointer;"></i></td>
+              </tr>
+              <tr onclick="playGreeting('How are you')">
+                <td class="example">How are you?</td>
+                <td class="phonetic">/haʊ ɑr ju/</td>
+                <td>Asking about wellbeing</td>
+                <td><i class="fas fa-volume-up" style="color: var(--sunset-gold); cursor: pointer;"></i></td>
+              </tr>
+              <tr onclick="playGreeting('Nice to meet you')">
+                <td class="example">Nice to meet you</td>
+                <td class="phonetic">/naɪs tu mit ju/</td>
+                <td>First introduction</td>
+                <td><i class="fas fa-volume-up" style="color: var(--sunset-gold); cursor: pointer;"></i></td>
+              </tr>
