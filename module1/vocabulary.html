@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vocabulário - Módulo 1 | English Revolution</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="../css/harvard-style.css">
+</head>
+<body>
+
+  <!-- Spotify Player -->
+  <div class="spotify-player">
+    <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DX0XUsuxWHRQd" width="100%" height="152" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-harvard fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">
+        <i class="fas fa-graduation-cap"></i>
+        English Revolution
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="vocabulary.html">
+              <i class="fas fa-book me-2"></i>Vocabulário
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="grammar.html">
+              <i class="fas fa-cogs me-2"></i>Gramática
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="culture.html">
+              <i class="fas fa-globe me-2"></i>Cultura
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="activities.html">
+              <i class="fas fa-gamepad me-2"></i>Atividades
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="project.html">
+              <i class="fas fa-star me-2"></i>Projeto
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="resources.html">
+              <i class="fas fa-library me-2"></i>Recursos
+            </a>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">
+              <i class="fas fa-home me-2"></i>Home
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="hero-content text-center">
+        <h1 class="display-4 fw-bold mb-4">📚 Vocabulário: Fundamentos do Inglês</h1>
+        <p class="lead">Alfabeto completo, números 1-100 e cumprimentos essenciais</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="container py-5">
+    
+    <!-- Alfabeto Completo -->
+    <section class="mb-5">
+      <div class="modern-card">
+        <h2 class="h3 mb-4">🔤 Alfabeto Completo em Inglês</h2>
+        <div class="alphabet-grid">
+          <div class="letter-card" onclick="playLetter('A')">
+            <div class="letter">A</div>
+            <div class="phonetic">/eɪ/</div>
+            <div class="example">Aretha</div>
+          </div>
+          <div class="letter-card" onclick="playLetter('B')">
+            <div class="letter">B</div>
+            <div class="phonetic">/biː/</div>
+            <div class="example">Beyoncé</div>
+          </div>
+          <div class="letter-card" onclick="playLetter('C')">
+            <div class="letter">C</div>
+            <div class="phonetic">/siː/</div>
+            <div class="example">Chic</div>
+          </div>
+          <div class="letter-card" onclick="playLetter('D')">
+            <div class="letter">D</div>
+            <div class="phonetic">/diː/</div>
+            <div class="example">Diana</div>
+          </div>
+          <div class="letter-card" onclick="playLetter('E')">
+            <div class="letter">E</div>
+            <div class="phonetic">/iː/</div>
+            <div class="example">Elton</div>
+          </div>
+          <div class="letter-card" onclick="playLetter('F')">
+            <div class="letter">F</div>
+            <div class="phonetic">/ɛf/</div>
+            <div class="example">Freddie</div>
+          </div>
+          <div class="letter-card" onclick="playLetter('G')">
+            <div class="letter">G</div>
+            <div class="phonetic">/dʒiː/</div>
+            <div class="example">Gaga</div>
+          </div>
+          <div class="letter-card" onclick="playLetter('H')">
+            <div class="letter">H</div>
+            <div class="phonetic">/eɪtʃ/</div>
+            <div class="example">Houston</div>
+          </div>
+          <div class="letter-card" onclick="playLetter('I')">
+            <div class="letter">I</div>
+            <div class="phonetic">/aɪ/</div>
+            <div class="example">Iman</div>
+          </div>
+          <div class="letter-card" onclick="playLetter('J')">
+            <div class="letter">J</div>
+            <div class="phonetic">/dʒeɪ/</div>
+            <div class="example">Janet</div>
+          </div>
+          <div class="letter-card" onclick="playLetter('K')">
+            <div class="letter">K</div>
+            <div class="phonetic">/keɪ/</div>
+            <div class="example">Kelly</div>
+          </div>
+          <div class="letter-card" onclick="playLetter('L')">
+            <div class="letter">L</div>
+            <div class="phonetic">/ɛl/</div>
+            <div class="example">Lauryn</div>
+          </div>
+          <div class="letter-card" onclick="playLetter('M')">
+            <div class="letter">M</div>
+            <div class="phonetic">/ɛm/</div>
+            <div class="example">Michelle</div>
+          </div>
+          <div class="letter-card" onclick="playLetter('N')">
+            <div class="letter">N</div>
+            <div class="phonetic">/ɛn/</div>
+            <div class="example">Nas</div>
+          </div>
+          <div class="letter-card" onclick="playLetter('O')">
+            <div class="letter">O</div>
+            <div class="phonetic">/oʊ/</div>
+            <div class="example">Oprah</div>
+          </div>
+          <div class="letter-card" onclick="playLetter('P')">
+            <div class="letter">P</div>
+            <div class="phonetic">/piː/</div>
+            <div class="example">Prince</div>
+          </div>
+          <div class="letter-card" onclick="playLetter('Q')">
+            <div class="letter">Q</div>
+            <div class="phonetic">/kjuː/</div>
+            <div class="example">Queen</div>
+          </div>
+          <div class="letter-card" onclick="playLetter('R')">
+            <div class="letter">R</div>
+            <div class="phonetic">/ɑːr/</div>
+            <div class="example">Rihanna</div>
+          </div>
+          <div class="letter-card" onclick="playLetter('S')">
+            <div class="letter">S</div>
+            <div class="phonetic">/ɛs/</div>
+            <div class="example">Stevie</div>
+          </div>
+          <div class="letter-card" onclick="playLetter('T')">
+            <div class="letter">T</div>
+            <div class="phonetic">/tiː/</div>
+            <div class="example">Tina</div>
+          </div>
+          <div class="letter-card" onclick="playLetter('U')">
+            <div class="letter">U</div>
+            <div class="phonetic">/juː/</div>
+            <div class="example">Usher</div>
+          </div>
+          <div class="letter-card" onclick="playLetter('V')">
+            <div class="letter">V</div>
+            <div class="phonetic">/viː/</div>
+            <div class="example">Viola</div>
+          </div>
+          <div class="letter-card" onclick="playLetter('W')">
+            <div class="letter">W</div>
+            <div class="phonetic">/ˈdʌbəljuː/</div>
+            <div class="example">Whitney</div>
+          </div>
+          <div class="letter-card" onclick="playLetter('X')">
+            <div class="letter">X</div>
+            <div class="phonetic">/ɛks/</div>
+            <div class="example">Xavier</div>
+          </div>
+          <div class="letter-card" onclick="playLetter('Y')">
+            <div class="letter">Y</div>
+            <div class="phonetic">/waɪ/</div>
+            <div class="example">Yoncé</div>
+          </div>
+          <div class="letter-card" onclick="playLetter('Z')">
+            <div class="letter">Z</div>
+            <div class="phonetic">/ziː/</div>
+            <div class="example">Zendaya</div>
+          </div>
+        </div>
+        <div class="alert alert-info mt-4">
+          <i class="fas fa-lightbulb me-2"></i>
+          <strong>Dica:</strong> Clique em cada letra para ouvir a pronúncia!
+        </div>
+      </div>
+    </section>
+
+    <!-- Números 1-100 -->
+    <section class="mb-5">
+      <div class="modern-card">
+        <h2 class="h3 mb-4">🔢 Números 1-100</h2>
+        
+        <!-- Números 1-20 -->
+        <h4 class="mb-3">Números Básicos (1-20)</h4>
+        <div class="numbers-grid mb-4">
+          <div class="number-card">
+            <div class="number">1</div>
+            <div class="word">one</div>
+            <div class="phonetic">/wʌn/</div>
+          </div>
+          <div class="number-card">
+            <div class="number">2</div>
+            <div class="word">two</div>
+            <div class="phonetic">/tuː/</div>
+          </div>
+          <div class="number-card">
+            <div class="number">3</div>
+            <div class="word">three</div>
+            <div class="phonetic">/θriː/</div>
+          </div>
+          <div class="number-card">
+            <div class="number">4</div>
+            <div class="word">four</div>
+            <div class="phonetic">/fɔːr/</div>
+          </div>
+          <div class="number-card">
+            <div class="number">5</div>
+            <div class="word">five</div>
+            <div class="phonetic">/faɪv/</div>
+          </div>
+          <div class="number-card">
+            <div class="number">6</div>
+            <div class="word">six</div>
+            <div class="phonetic">/sɪks/</div>
+          </div>
+          <div class="number-card">
+            <div class="number">7</div>
+            <div class="word">seven</div>
+            <div class="phonetic">/ˈsɛvən/</div>
+          </div>
+          <div class="number-card">
+            <div class="number">8</div>
+            <div class="word">eight</div>
+            <div class="phonetic">/eɪt/</div>
+          </div>
+          <div class="number-card">
+            <div class="number">9</div>
+            <div class="word">nine</div>
+            <div class="phonetic">/naɪn/</div>
+          </div>
+          <div class="number-card">
+            <div class="number">10</div>
+            <div class="word">ten</div>
+            <div class="phonetic">/tɛn/</div>
+          </div>
+          <div class="number-card">
+            <div class="number">11</div>
+            <div class="word">eleven</div>
+            <div class="phonetic">/ɪˈlɛvən/</div>
+          </div>
+          <div class="number-card">
+            <div class="number">12</div>
+            <div class="word">twelve</div>
+            <div class="phonetic">/twɛlv/</div>
+          </div>
+          <div class="number-card">
+            <div class="number">13</div>
+            <div class="word">thirteen</div>
+            <div class="phonetic">/ˌθɜrˈtin/</div>
+          </div>
+          <div class="number-card">
+            <div class="number">14</div>
+            <div class="word">fourteen</div>
+            <div class="phonetic">/ˌfɔrˈtin/</div>
+          </div>
+          <div class="number-card">
+            <div class="number">15</div>
+            <div class="word">fifteen</div>
+            <div class="phonetic">/ˌfɪfˈtin/</div>
+          </div>
+          <div class="number-card">
+            <div class="number">16</div>
+            <div class="word">sixteen</div>
+            <div class="phonetic">/ˌsɪksˈtin/</div>
+          </div>
+          <div class="number-card">
+            <div class="number">17</div>
+            <div class="word">seventeen</div>
+            <div class="phonetic">/ˌsɛvənˈtin/</div>
+          </div>
+          <div class="number-card">
+            <div class="number">18</div>
+            <div class="word">eighteen</div>
+            <div class="phonetic">/ˌeɪˈtin/</div>
+          </div>
+          <div class="number-card">
+            <div class="number">19</div>
+            <div class="word">nineteen</div>
+            <div class="phonetic">/ˌnaɪnˈtin/</div>
+          </div>
+          <div class="number-card">
+            <div class="number">20</div>
+            <div class="word">twenty</div>
+            <div class="phonetic">/ˈtwɛnti/</div>
+          </div>
+        </div>
+
+        <!-- Dezenas -->
+        <h4 class="mb-3">Dezenas (20-100)</h4>
+        <div class="row">
+          <div class="col-md-6">
+            <ul class="list-group">
+              <li class="list-group-item d-flex justify-content-between">
+                <span><strong>30</strong> - thirty</span>
+                <span class="text-muted">/ˈθɜrti/</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between">
+                <span><strong>40</strong> - forty</span>
+                <span class="text-muted">/ˈfɔrti/</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between">
+                <span><strong>50</strong> - fifty</span>
+                <span class="text-muted">/ˈfɪfti/</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between">
+                <span><strong>60</strong> - sixty</span>
+                <span class="text-muted">/ˈsɪksti/</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between">
+                <span><strong>70</strong> - seventy</span>
+                <span class="text-muted">/ˈsɛvənti/</span>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <ul class="list-group">
+              <li class="list-group-item d-flex justify-content-between">
+                <span><strong>80</strong> - eighty</span>
+                <span class="text-muted">/ˈeɪti/</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between">
+                <span><strong>90</strong> - ninety</span>
+                <span class="text-muted">/ˈnaɪnti/</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between">
+                <span><strong>100</strong> - one hundred</span>
+                <span class="text-muted">/wʌn ˈhʌndrəd/</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cumprimentos Expandidos -->
+    <section class="mb-5">
+      <div class="modern-card">
+        <h2 class="h3 mb-4">👋 Cumprimentos Essenciais (13 cumprimentos)</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <h5>Formais</h5>
+            <ul class="list-group mb-3">
+              <li class="list-group-item">
+                <strong>Hello</strong> <span class="text-muted">/həˈloʊ/</span>
+                <div class="small text-success">Olá (universal)</div>
+              </li>
+              <li class="list-group-item">
+                <strong>Good morning</strong> <span class="text-muted">/ɡʊd ˈmɔːrnɪŋ/</span>
+                <div class="small text-success">Bom dia</div>
+              </li>
+              <li class="list-group-item">
+                <strong>Good afternoon</strong> <span class="text-muted">/ɡʊd ˌæftərˈnuːn/</span>
+                <div class="small text-success">Boa tarde</div>
+              </li>
+              <li class="list-group-item">
+                <strong>Good evening</strong> <span class="text-muted">/ɡʊd ˈiːvnɪŋ/</span>
+                <div class="small text-success">Boa noite</div>
+              </li>
+              <li class="list-group-item">
+                <strong>Nice to meet you</strong> <span class="text-muted">/naɪs tu mit ju/</span>
+                <div class="small text-success">Prazer em conhecê-lo</div>
+              </li>
+              <li class="list-group-item">
+                <strong>How do you do?</strong> <span class="text-muted">/haʊ du ju du/</span>
+                <div class="small text-success">Como vai? (formal)</div>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <h5>Informais</h5>
+            <ul class="list-group">
+              <li class="list-group-item">
+                <strong>Hi</strong> <span class="text-muted">/haɪ/</span>
+                <div class="small text-primary">Oi</div>
+              </li>
+              <li class="list-group-item">
+                <strong>Hey</strong> <span class="text-muted">/heɪ/</span>
+                <div class="small text-primary">Ei</div>
+              </li>
+              <li class="list-group-item">
+                <strong>What's up?</strong> <span class="text-muted">/wʌts ʌp/</span>
+                <div class="small text-primary">E aí?</div>
+              </li>
+              <li class="list-group-item">
+                <strong>How's it going?</strong> <span class="text-muted">/haʊz ɪt ˈɡoʊɪŋ/</span>
+                <div class="small text-primary">Como vai?</div>
+              </li>
+              <li class="list-group-item">
+                <strong>Howdy</strong> <span class="text-muted">/ˈhaʊdi/</span>
+                <div class="small text-primary">Olá (americano)</div>
+              </li>
+              <li class="list-group-item">
+                <strong>Yo!</strong> <span class="text-muted">/joʊ/</span>
+                <div class="small text-primary">E aí! (hip-hop)</div>
+              </li>
+              <li class="list-group-item">
+                <strong>Peace</strong> <span class="text-muted">/piːs/</span>
+                <div class="small text-primary">✌️ Paz (anos 70)</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Navigation -->
+    <div class="d-flex justify-content-between">
+      <a href="../index.html" class="btn btn-outline-secondary">
+        <i class="fas fa-home me-2"></i>Voltar ao Início
+      </a>
+      <a href="grammar.html" class="btn-harvard">
+        Próximo: Gramática <i class="fas fa-arrow-right ms-2"></i>
+      </a>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer-harvard">
+    <div class="container">
+      <div class="footer-links">
+        <div class="footer-section">
+          <h5>English Revolution</h5>
+          <p>Transformando vidas através do ensino inclusivo de inglês.</p>
+        </div>
+        <div class="footer-section">
+          <h5>Módulo 1</h5>
+          <a href="vocabulary.html">Vocabulário</a><br>
+          <a href="grammar.html">Gramática</a><br>
+          <a href="culture.html">Cultura</a><br>
+          <a href="activities.html">Atividades</a>
+        </div>
+        <div class="footer-section">
+          <h5>Contato</h5>
+          <a href="mailto:brunoveusebio@hotmail.com">
+            <i class="fas fa-envelope me-2"></i>brunoveusebio@hotmail.com
+          </a><br>
+          <a href="https://instagram.com/brunovilar_" target="_blank">
+            <i class="fab fa-instagram me-2"></i>@brunovilar_
+          </a>
+        </div>
+      </div>
+      <div class="text-center pt-3 border-top">
+        <p>&copy; 2025 Bruno Vilar - English Revolution. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/revolution.js"></script>
+</body>
+</html>
