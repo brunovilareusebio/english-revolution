@@ -2,70 +2,398 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Gramática – Módulo 1</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gramática - Módulo 1 | English Revolution</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="../css/harvard-style.css">
 </head>
-<body class="bg-light">
+<body>
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <!-- Spotify Player -->
+  <div class="spotify-player">
+    <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DX0XUsuxWHRQd" width="100%" height="152" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-harvard fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="../index.html">← Início</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <a class="navbar-brand" href="../index.html">
+        <i class="fas fa-graduation-cap"></i>
+        English Revolution
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navMenu">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="vocabulary.html">Vocabulário</a></li>
-          <li class="nav-item"><a class="nav-link active" href="grammar.html">Gramática</a></li>
-          <li class="nav-item"><a class="nav-link" href="culture.html">Cultura</a></li>
-          <li class="nav-item"><a class="nav-link" href="activities.html">Atividades</a></li>
-          <li class="nav-item"><a class="nav-link" href="project.html">Projeto</a></li>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="vocabulary.html">
+              <i class="fas fa-book me-2"></i>Vocabulário
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="grammar.html">
+              <i class="fas fa-cogs me-2"></i>Gramática
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="culture.html">
+              <i class="fas fa-globe me-2"></i>Cultura
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="activities.html">
+              <i class="fas fa-gamepad me-2"></i>Atividades
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="project.html">
+              <i class="fas fa-star me-2"></i>Projeto
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="resources.html">
+              <i class="fas fa-library me-2"></i>Recursos
+            </a>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">
+              <i class="fas fa-home me-2"></i>Home
+            </a>
+          </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <main class="container pt-5 mt-4">
-    <h1 class="display-5 fw-bold">🧠 Gramática: “to be” &amp; WH-Questions</h1>
-
-    <h2 class="mt-4">Verbo “to be” – Present Simple</h2>
-    <table class="table table-striped">
-      <thead>
-        <tr><th>Pronome</th><th>Verbo</th><th>Contração</th><th>Exemplo</th></tr>
-      </thead>
-      <tbody>
-        <tr><td>I</td><td>am</td><td>I’m</td><td>I’m Ana.</td></tr>
-        <tr><td>You</td><td>are</td><td>You’re</td><td>You’re Bruno.</td></tr>
-        <tr><td>He/She</td><td>is</td><td>He’s/She’s</td><td>She’s Luna.</td></tr>
-      </tbody>
-    </table>
-
-    <h2 class="mt-4">❓ WH-Questions</h2>
-    <ul>
-      <li>What’s your name?</li>
-      <li>Where are you from?</li>
-      <li>How are you?</li>
-    </ul>
-
-    <h2 class="mt-4">💬 Exercício</h2>
-    <p>“Destiny’s Child ___ an iconic group.”</p>
-    <button class="btn btn-outline-primary me-2" onclick="checkAnswer(this,'correct')">are</button>
-    <button class="btn btn-outline-primary" onclick="checkAnswer(this,'wrong')">is</button>
-
-    <div class="mt-5 text-center">
-      <a href="culture.html" class="btn btn-primary">Próxima: Cultura →</a>
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="hero-content text-center">
+        <h1 class="display-4 fw-bold mb-4">🧠 Gramática: Fundamentos</h1>
+        <p class="lead">Verbo "to be", WH-Questions e construções básicas</p>
+      </div>
     </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="container py-5">
+    
+    <!-- Verbo To Be -->
+    <section class="mb-5">
+      <div class="modern-card">
+        <h2 class="h3 mb-4">👤 Verbo "To Be" - Presente Simples</h2>
+        <div class="table-responsive">
+          <table class="table table-striped table-hover">
+            <thead class="table-dark">
+              <tr>
+                <th>Pronome</th>
+                <th>Verbo "to be"</th>
+                <th>Contração</th>
+                <th>Exemplo</th>
+                <th>Tradução</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>I</strong></td>
+                <td>am</td>
+                <td>I'm</td>
+                <td>I'm a student.</td>
+                <td>Eu sou um(a) estudante.</td>
+              </tr>
+              <tr>
+                <td><strong>You</strong></td>
+                <td>are</td>
+                <td>You're</td>
+                <td>You're from Brazil.</td>
+                <td>Você é do Brasil.</td>
+              </tr>
+              <tr>
+                <td><strong>He</strong></td>
+                <td>is</td>
+                <td>He's</td>
+                <td>He's a musician.</td>
+                <td>Ele é um músico.</td>
+              </tr>
+              <tr>
+                <td><strong>She</strong></td>
+                <td>is</td>
+                <td>She's</td>
+                <td>She's amazing.</td>
+                <td>Ela é incrível.</td>
+              </tr>
+              <tr>
+                <td><strong>It</strong></td>
+                <td>is</td>
+                <td>It's</td>
+                <td>It's beautiful.</td>
+                <td>É/Está bonito(a).</td>
+              </tr>
+              <tr>
+                <td><strong>We</strong></td>
+                <td>are</td>
+                <td>We're</td>
+                <td>We're learning.</td>
+                <td>Nós estamos aprendendo.</td>
+              </tr>
+              <tr>
+                <td><strong>They</strong></td>
+                <td>are</td>
+                <td>They're</td>
+                <td>They're friends.</td>
+                <td>Eles/Elas são amigos(as).</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- WH-Questions com respostas -->
+    <section class="mb-5">
+      <div class="modern-card">
+        <h2 class="h3 mb-4">❓ WH-Questions com Exemplos de Respostas</h2>
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <div class="card border-primary">
+              <div class="card-header bg-primary text-white">
+                <h5 class="mb-0">What - O que/Qual</h5>
+              </div>
+              <div class="card-body">
+                <p><strong>Pergunta:</strong> What's your name?</p>
+                <p><strong>Respostas:</strong></p>
+                <ul>
+                  <li>My name is... / My name's...</li>
+                  <li>I'm... / I am...</li>
+                  <li>You can call me...</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="card border-success">
+              <div class="card-header bg-success text-white">
+                <h5 class="mb-0">Where - Onde</h5>
+              </div>
+              <div class="card-body">
+                <p><strong>Pergunta:</strong> Where are you from?</p>
+                <p><strong>Respostas:</strong></p>
+                <ul>
+                  <li>I'm from... / I am from...</li>
+                  <li>I come from...</li>
+                  <li>I'm Brazilian / I'm American...</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="card border-warning">
+              <div class="card-header bg-warning text-dark">
+                <h5 class="mb-0">How - Como</h5>
+              </div>
+              <div class="card-body">
+                <p><strong>Pergunta:</strong> How are you?</p>
+                <p><strong>Respostas:</strong></p>
+                <ul>
+                  <li>I'm fine, thank you</li>
+                  <li>I'm good / I'm great</li>
+                  <li>Not bad / Could be better</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="card border-info">
+              <div class="card-header bg-info text-white">
+                <h5 class="mb-0">When - Quando</h5>
+              </div>
+              <div class="card-body">
+                <p><strong>Pergunta:</strong> When is your birthday?</p>
+                <p><strong>Respostas:</strong></p>
+                <ul>
+                  <li>It's in... (month)</li>
+                  <li>It's on... (date)</li>
+                  <li>My birthday is...</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5 Exercícios de Gramática -->
+    <section class="mb-5">
+      <div class="modern-card">
+        <h2 class="h3 mb-4">🎯 5 Exercícios de Gramática</h2>
+        
+        <!-- Exercício 1 -->
+        <div class="exercise-card mb-4">
+          <h5>Exercício 1: Complete com o verbo "to be" correto</h5>
+          <p>"Destiny's Child <span id="answer1">___</span> an iconic group."</p>
+          <div class="btn-group" role="group">
+            <button class="btn btn-outline-primary" onclick="checkAnswer(1, 'wrong', this)">am</button>
+            <button class="btn btn-outline-primary" onclick="checkAnswer(1, 'correct', this)">are</button>
+            <button class="btn btn-outline-primary" onclick="checkAnswer(1, 'wrong', this)">is</button>
+          </div>
+          <div id="feedback1" class="mt-2"></div>
+        </div>
+
+        <!-- Exercício 2 -->
+        <div class="exercise-card mb-4">
+          <h5>Exercício 2: Escolha a contração correta</h5>
+          <p>"I <span id="answer2">___</span> from São Paulo."</p>
+          <div class="btn-group" role="group">
+            <button class="btn btn-outline-primary" onclick="checkAnswer(2, 'correct', this)">I'm</button>
+            <button class="btn btn-outline-primary" onclick="checkAnswer(2, 'wrong', this)">I're</button>
+            <button class="btn btn-outline-primary" onclick="checkAnswer(2, 'wrong', this)">I is</button>
+          </div>
+          <div id="feedback2" class="mt-2"></div>
+        </div>
+
+        <!-- Exercício 3 -->
+        <div class="exercise-card mb-4">
+          <h5>Exercício 3: Complete a pergunta</h5>
+          <p>"<span id="answer3">___</span> is your favorite artist?"</p>
+          <div class="btn-group" role="group">
+            <button class="btn btn-outline-primary" onclick="checkAnswer(3, 'correct', this)">Who</button>
+            <button class="btn btn-outline-primary" onclick="checkAnswer(3, 'wrong', this)">What</button>
+            <button class="btn btn-outline-primary" onclick="checkAnswer(3, 'wrong', this)">Where</button>
+          </div>
+          <div id="feedback3" class="mt-2"></div>
+        </div>
+
+        <!-- Exercício 4 -->
+        <div class="exercise-card mb-4">
+          <h5>Exercício 4: Qual é a forma negativa correta?</h5>
+          <p>"They <span id="answer4">___</span> from Mexico."</p>
+          <div class="btn-group" role="group">
+            <button class="btn btn-outline-primary" onclick="checkAnswer(4, 'wrong', this)">are not</button>
+            <button class="btn btn-outline-primary" onclick="checkAnswer(4, 'correct', this)">aren't</button>
+            <button class="btn btn-outline-primary" onclick="checkAnswer(4, 'wrong', this)">isn't</button>
+          </div>
+          <div id="feedback4" class="mt-2"></div>
+        </div>
+
+        <!-- Exercício 5 -->
+        <div class="exercise-card mb-4">
+          <h5>Exercício 5: Complete a resposta</h5>
+          <p>Question: "Where are you from?" Answer: "<span id="answer5">___</span> from Brazil."</p>
+          <div class="btn-group" role="group">
+            <button class="btn btn-outline-primary" onclick="checkAnswer(5, 'wrong', this)">You're</button>
+            <button class="btn btn-outline-primary" onclick="checkAnswer(5, 'correct', this)">I'm</button>
+            <button class="btn btn-outline-primary" onclick="checkAnswer(5, 'wrong', this)">We're</button>
+          </div>
+          <div id="feedback5" class="mt-2"></div>
+        </div>
+
+        <div id="finalScore" class="alert alert-info mt-4" style="display: none;">
+          <h5>Resultado Final:</h5>
+          <p id="scoreText"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Navigation -->
+    <div class="d-flex justify-content-between">
+      <a href="vocabulary.html" class="btn btn-outline-secondary">
+        <i class="fas fa-arrow-left me-2"></i>Anterior: Vocabulário
+      </a>
+      <a href="culture.html" class="btn-harvard">
+        Próximo: Cultura <i class="fas fa-arrow-right ms-2"></i>
+      </a>
+    </div>
+
   </main>
 
-  <footer class="bg-dark text-white py-3 text-center mt-5">
-    © 2025 Bruno Vilar – English Revolution
+  <!-- Footer -->
+  <footer class="footer-harvard">
+    <div class="container">
+      <div class="footer-links">
+        <div class="footer-section">
+          <h5>English Revolution</h5>
+          <p>Transformando vidas através do ensino inclusivo de inglês.</p>
+        </div>
+        <div class="footer-section">
+          <h5>Módulo 1</h5>
+          <a href="vocabulary.html">Vocabulário</a><br>
+          <a href="grammar.html">Gramática</a><br>
+          <a href="culture.html">Cultura</a><br>
+          <a href="activities.html">Atividades</a>
+        </div>
+        <div class="footer-section">
+          <h5>Contato</h5>
+          <a href="mailto:brunoveusebio@hotmail.com">
+            <i class="fas fa-envelope me-2"></i>brunoveusebio@hotmail.com
+          </a><br>
+          <a href="https://instagram.com/brunovilar_" target="_blank">
+            <i class="fab fa-instagram me-2"></i>@brunovilar_
+          </a>
+        </div>
+      </div>
+      <div class="text-center pt-3 border-top">
+        <p>&copy; 2025 Bruno Vilar - English Revolution. Todos os direitos reservados.</p>
+      </div>
+    </div>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="../js/revolution.js"></script>
-  <script src="../js/grammar.js"></script>
+  <script>
+    let score = 0;
+    let totalQuestions = 5;
+    let answeredQuestions = 0;
+
+    function checkAnswer(questionNum, result, button) {
+      const buttons = button.parentElement.querySelectorAll('button');
+      buttons.forEach(btn => btn.disabled = true);
+      
+      const feedbackDiv = document.getElementById(`feedback${questionNum}`);
+      const answerSpan = document.getElementById(`answer${questionNum}`);
+      
+      if (result === 'correct') {
+        button.classList.remove('btn-outline-primary');
+        button.classList.add('btn-success');
+        feedbackDiv.innerHTML = '<div class="alert alert-success">✅ Correto!</div>';
+        answerSpan.textContent = button.textContent;
+        score++;
+      } else {
+        button.classList.remove('btn-outline-primary');
+        button.classList.add('btn-danger');
+        feedbackDiv.innerHTML = '<div class="alert alert-danger">❌ Incorreto. Tente novamente!</div>';
+      }
+      
+      answeredQuestions++;
+      
+      if (answeredQuestions === totalQuestions) {
+        showFinalScore();
+      }
+    }
+
+    function showFinalScore() {
+      const finalScoreDiv = document.getElementById('finalScore');
+      const scoreText = document.getElementById('scoreText');
+      const percentage = (score / totalQuestions) * 100;
+      
+      let message = '';
+      if (percentage >= 80) {
+        message = `🎉 Excelente! Você acertou ${score} de ${totalQuestions} questões (${percentage}%)`;
+        finalScoreDiv.className = 'alert alert-success mt-4';
+      } else if (percentage >= 60) {
+        message = `👍 Bom trabalho! Você acertou ${score} de ${totalQuestions} questões (${percentage}%)`;
+        finalScoreDiv.className = 'alert alert-warning mt-4';
+      } else {
+        message = `📚 Continue estudando! Você acertou ${score} de ${totalQuestions} questões (${percentage}%)`;
+        finalScoreDiv.className = 'alert alert-info mt-4';
+      }
+      
+      scoreText.textContent = message;
+      finalScoreDiv.style.display = 'block';
+    }
+  </script>
 </body>
 </html>
